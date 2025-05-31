@@ -96,7 +96,7 @@ strong{
 	box-shadow:0 0 6px rgba(3,3,3,0.6);
 	position:fixed;
 	left:0;
-	width:250px;
+	width: 280px;
 	height:100%;
 	min-height:100%;
 	z-index:100;
@@ -147,60 +147,83 @@ noscript p{
 	letter-spacing:0;
 }
 
+
 /*----------------------------------------------------------------------*/
 /* Sidebar
 /*----------------------------------------------------------------------*/
-
-#documenter_sidebar #documenter_logo {
+/* Sidebar Container */
+#documenter_sidebar {
     font-size: 20px;
-    display: block;
     font-weight: 600;
-    margin: 30px 0 30px 0;
+    display: block;
+}
+
+/* Logo */
+#documenter_logo {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0;
+    text-decoration: none;
     color: #fff;
 }
-#documenter_sidebar ul{
-	min-height:auto;	
-	overflow:auto;
-	margin: 0 !important;
-	
+
+/* Wrapper cho từng mục menu */
+#documenter_nav > div {
+    margin-bottom: 5px;
+    position: relative;
 }
 
-#documenter_sidebar ul li{
-	
-	padding:0;
-}
-#documenter_sidebar ul a{
-	display:block;
-	border-bottom: 1px solid #444;
-	padding:13px 10px 13px 10px;
-	font-size: 16px;
-	font-weight: 500;
-	color: #fff;
-}
-
-#documenter_sidebar ul a.active{
-	color: #77E590;
-	font-weight: 700;
-
+/* Tất cả các link menu */
+#documenter_nav a {
+    display: block;
+    padding: 13px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border-bottom: 1px solid #444;
+    text-decoration: none;
+    transition: background 0.2s;
 }
 
-#documenter_sidebar ul a:hover,#documenter_sidebar ul a.current{
-	-webkit-text-shadow:none;
-	-moz-text-shadow:none;
-	text-shadow:none;
-	text-decoration:none;
+/* Hover cho menu chính */
+#documenter_nav a:hover {
+    background-color: #444;
 }
-#documenter_sidebar ul li ul{
-	border-top:0;
-	padding: 0 0 0 15px;
-	height:auto;
-	overflow:auto;
-	margin:0;
-	
+
+/* Active trạng thái của menu & submenu */
+#documenter_nav a.current {
+    color: #77E590;
+    font-weight: 700;
 }
-#documenter_sidebar ul li ul li a{
-	display:block;
-	font-size: 14px;
+
+/* Submenu container */
+.submenu {
+    display: none;
+    padding-left: 15px;
+}
+
+/* Khi submenu được mở */
+.submenu.show,
+.has-submenu.current + .submenu {
+    display: block;
+}
+
+/* Link trong submenu */
+.submenu a {
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 16px;
+    border-bottom: 1px solid #444;
+    display: block;
+    text-decoration: none;
+}
+
+/* Hover và active cho submenu */
+.submenu a:hover,
+.submenu a.current {
+    color: #77E590;
+    font-weight: 700;
 }
 
 /*----------------------------------------------------------------------*/
