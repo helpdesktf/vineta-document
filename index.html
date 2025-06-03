@@ -25,7 +25,7 @@
                <script src="assets/js/jquery.js"></script>
                <script src="assets/js/jquery.scrollTo.js"></script>
                <script src="assets/js/jquery.easing.js"></script>
-               <script>document.createElement('section');var duration='500',easing='swing';</script>
+               <!-- <script>document.createElement('section');var duration='500',easing='swing';</script> -->
                <!-- <script src="assets/js/script.js"></script> -->
                <script src="assets/js/documenter-navigation.js"></script>
 
@@ -39,27 +39,36 @@
                     <div><a href="#documenter_cover">Introduction</a></div>
                     <div><a href="#getting_started">Getting Started</a></div>
                     <div><a href="#theme_installation">Installation</a></div>
-                    <div>
+                    <div class="menu-item">
                         <a class="theme_option has-submenu" href="#theme_option" aria-expanded="false" aria-controls="submenu-theme_option">Theme Option</a>
                         <div id="submenu-theme_option" class="submenu" role="menu" aria-hidden="true">
-                            <div><a href="#general" title="Theme Customize">General</a></div>
-                            <div><a href="#header_customize" title="Theme Customize">Header</a></div>
-                            <div><a href="#page_title_customize" title="Theme Customize">Page Title</a></div>
-                            <div><a href="#typography_customizer" title="Theme Customize">Typography</a></div>
-                            <div><a href="#layout_amp_styles" title="Theme Customize">Layout</a></div>
-                            <div><a href="#footer_customize" title="Theme Customize">Footer</a></div>
+                            <div><a href="#general" title="General">General</a></div>
+                            <div><a href="#header_customize" title="Header">Header</a></div>
+                            <div><a href="#page_title_customize" title="Page Title">Page Title</a></div>
+                            <div><a href="#typography_customizer" title="Typography">Typography</a></div>
+                            <div><a href="#layout_amp_styles" title="Layout">Layout</a></div>
+                            <div><a href="#footer_customize" title="Footer">Footer</a></div>
                         </div>
                     </div>
-                    <div>
+                    <div class="menu-item">
                         <a class="woocommerce_setting has-submenu" href="#woocommerce_setting" aria-expanded="false" aria-controls="submenu-woocommerce">WooCommerce Settings</a>
                         <div id="submenu-woocommerce" class="submenu" role="menu" aria-hidden="true">
-                            <div><a href="#cart" title="Theme Customize">Cart</a></div>
-                            <div><a href="#woohome" title="Theme Customize">Home</a></div>
-                            <div><a href="#order" title="Theme Customize">Order</a></div>
-                            <div><a href="#coupons" title="Theme Customize">Coupons</a></div>
+                            <div><a href="#cart" title="Cart">Cart</a></div>
+                            <div><a href="#order" title="Order">Order</a></div>
+                            <div><a href="#coupons" title="Coupons">Coupons</a></div>
+                            <div><a href="#top-category" title="Top Categories">Top Categories</a></div>
+                            <div><a href="#shop-page-title" title="Shop Page Title">Shop Page Title</a></div>
+                            <div><a href="#catalog" title="Catalog Toolbar">Catalog Toolbar</a></div>
+                            <div><a href="#shop-layout" title="Shop Layout">Shop Layout</a></div>
+                            <div><a href="#product-card" title="Product Card">Product Card</a></div>
+                            <div><a href="#product-badge" title="Product Badges">Product Badges</a></div>
+                            <div><a href="#mini-cart" title="Mini Cart">Mini Cart</a></div>
+                            <div><a href="#icon-box" title="Icon Box">Icon Box</a></div>
+                            <div><a href="#live-notification" title="Live Notification">Live Notification</a></div>
+                            <div><a href="#cookies" title="Cookies">Cookies</a></div>
                         </div>
                     </div>
-                    <div>
+                    <div class="menu-item">
                         <a class="e-commerce-features has-submenu" href="#e-commerce-features" aria-expanded="false" aria-controls="submenu-ecommerce">ECommerce Features</a>
                         <div id="submenu-ecommerce" class="submenu" role="menu" aria-hidden="true">
                             <div><a href="#salecountdown" title="Sale Countdown Timer">Sale Countdown Timer</a></div>
@@ -84,10 +93,19 @@
                             <div><a href="#recently-products" title="Recently Products">Recently Products</a></div>
                             <div><a href="#up-sell-products" title="Up Sell Products">Up Sell Products</a></div>
                             <div><a href="#cross-sell-products" title="Cross-sell Products">Cross-sell Products</a></div>
-                            
                         </div>
                     </div>
-                    <div>
+                    <div class="menu-item">
+                        <a class="mobile has-submenu" href="#mobile" aria-expanded="false" aria-controls="submenu-pages">Mobile</a>
+                        <div id="submenu-pages" class="submenu" role="menu" aria-hidden="true">
+                            <div><a href="#mobile-topbar" title="Topbar">Topbar</a></div>
+                            <div><a href="#mobile-header" title="Header">Header</a></div>
+                            <div><a href="#mobile-prd-card" title="Product Card">Product Card</a></div>
+                            <div><a href="#mobile-infor" title="Mobile Info">Mobile Info</a></div>
+                            <div><a href="#mobile-bottom" title="Nav-bar Mobile">Nav-bar Mobile</a></div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
                         <a class="pages has-submenu" href="#pages" aria-expanded="false" aria-controls="submenu-pages">Pages</a>
                         <div id="submenu-pages" class="submenu" role="menu" aria-hidden="true">
                             <div><a href="#createapage" title="Create a page">Create A Page</a></div>
@@ -95,7 +113,7 @@
                             <div><a href="#pageoptions" title="Page Options">Page Options</a></div>
                         </div>
                     </div>
-                    <div>
+                    <div class="menu-item">
                         <a class="menus has-submenu" href="#menus" aria-expanded="false" aria-controls="submenu-menu">MENU</a>
                         <div id="submenu-menu" class="submenu" role="menu" aria-hidden="true">
                             <div><a href="#createmenu" title="How to create menu">How to create menu</a></div>
@@ -119,476 +137,430 @@
                     </header>
 
                     <section id="documenter_cover">
-                     <h2>Introduction</h2>
-                     <p>First of all, Themes Flat thank you for choosing to buy our theme!</p>
-
-                     <p>In this document, we provide all kinds of good information with all the details you need to use our theme. It is recommended you read it thoroughly to fully leverage the Vineta theme's capabilities. Please also make sure to check out our Video Tutorials as they explain everything covered in here in greater depth. ​We hope you have fun and enjoy working with our theme!</p>
-                     <ul>
-                        <li><strong>Theme version:</strong> 1.0.0</li>
-                        <li><strong>Created date:</strong> May 29, 2025</li>
-                        <li><strong>Update date:</strong> Jun 02, 2025</li>
-                        <li><strong>Author:</strong> <a href="https://themeforest.net/user/themesflat/portfolio">Themesflat</a></li>
-                     </ul>
-                     
-                     <P>In order to ensure a smooth and easy working experience with Vineta, we have created a complete user manual. However, if you have any issues that go beyond the scope of this guide or are having problems with our theme, we will be happy to help! Please contact us via our helpdesk or email and we will respond as soon as possible! Thank you so much for purchasing our theme! <br></P>
-                     <strong>Email: </strong><a href="mailto:helpdeskthemesflat@gmail.com"> helpdeskthemesflat@gmail.com</a>
-                     <strong>Create ticket id : </strong><a href="https://themesflat.ticksy.com/ticket"> https://themesflat.ticksy.com/ticket</a>
+                     <div><h2>Introduction</h2>
+                        <p>First of all, Themes Flat thank you for choosing to buy our theme!</p>
+                        <p>In this document, we provide all kinds of good information with all the details you need to use our theme. It is recommended you read it thoroughly to fully leverage the Vineta theme's capabilities. Please also make sure to check out our Video Tutorials as they explain everything covered in here in greater depth. ​We hope you have fun and enjoy working with our theme!</p>
+                        <ul>
+                            <li><strong>Theme version:</strong> 1.0.0</li>
+                            <li><strong>Created date:</strong> May 29, 2025</li>
+                            <li><strong>Update date:</strong> Jun 02, 2025</li>
+                            <li><strong>Author:</strong> <a href="https://themeforest.net/user/themesflat/portfolio">Themesflat</a></li>
+                        </ul>
+                        <P>In order to ensure a smooth and easy working experience with Vineta, we have created a complete user manual. However, if you have any issues that go beyond the scope of this guide or are having problems with our theme, we will be happy to help! Please contact us via our helpdesk or email and we will respond as soon as possible! Thank you so much for purchasing our theme! <br></P>
+                        <strong>Email: </strong><a href="mailto:helpdeskthemesflat@gmail.com"> helpdeskthemesflat@gmail.com</a>
+                        <strong>Create ticket id : </strong><a href="https://themesflat.ticksy.com/ticket"> https://themesflat.ticksy.com/ticket</a>
+                     </div>
                     </section>
 
                     <!-- Started -->
                     <section id="getting_started">
-                        <div class="page-header"><h3>Getting Started</h3></div>
-                        <h4 id="getting_started_requirements">Requirements</h4>
-                        <div>
-                            There are minimal requirements to run this product:</div>
-                        <ul>
-                            <li>
-                                PHP 8.0 or higher</li>  
-                        </ul>
-                        <h4 id="getting_started_recommended">Recommended</h4>
-                        <p>
-                            Required must have</p>   
-                        <ul>
-                            <li>upload_max_filesize = 512M</li>
-                            <li>post_max_size = 516M</li>
-                            <li>max_execution_time = 300</li>
-                            <li>max_input_time = 300</li>
-                            <li>memory_limit = 512M</li>
-                        </ul>
-                        <p>
-                            Besides, need more</p>   
-                        <ul>
-                            <li>Elementor</li>
-                            <li>Contact Form 7</li>
-                            <li>Vineta Addon</li>
-                            <li>WooCommerce</li>  
-                            <li>One Click Demo Import</li>
-                            <li>MC4WP: Mailchimp for WordPress</li>
-                            <li>FOX - Currency Switcher Professional for WooCommerce</li>
-                            <li>WCBoost - Products Compare</li>
-                            <li>WCBoost - Variation Swatches</li>
-                            <li>WCBoost - Wishlist</li>
-                            <li>WPML</li>
-                        </ul>
+                        <div class="page-header"><h3>Getting Started</h3>
+                            <h4 id="getting_started_requirements">Requirements</h4>
+                            <div>
+                                There are minimal requirements to run this product:</div>
+                            <ul>
+                                <li>
+                                    PHP 8.0 or higher</li>  
+                            </ul>
+                            <h4 id="getting_started_recommended">Recommended</h4>
+                            <p>
+                                Required must have</p>   
+                            <ul>
+                                <li>upload_max_filesize = 512M</li>
+                                <li>post_max_size = 516M</li>
+                                <li>max_execution_time = 300</li>
+                                <li>max_input_time = 300</li>
+                                <li>memory_limit = 512M</li>
+                            </ul>
+                            <p>
+                                Besides, need more</p>   
+                            <ul>
+                                <li>Elementor</li>
+                                <li>Contact Form 7</li>
+                                <li>Vineta Addon</li>
+                                <li>WooCommerce</li>  
+                                <li>One Click Demo Import</li>
+                                <li>MC4WP: Mailchimp for WordPress</li>
+                                <li>FOX - Currency Switcher Professional for WooCommerce</li>
+                                <li>WCBoost - Products Compare</li>
+                                <li>WCBoost - Variation Swatches</li>
+                                <li>WCBoost - Wishlist</li>
+                                <li>WPML</li>
+                            </ul>
+                        </div>
                     </section>
 
                     <section id="wordpress-information">
-                        <div class="page-header"><h3>Wordpress Information</h4></div>
+                        <div class="page-header"><h3>Wordpress Information</h3>
                             <p>To install this theme you must have a working version of WordPress already installed. If you need help installing WordPress, follow the instructions in <a href="https://developer.wordpress.org/advanced-administration/before-install/howto-install/" target="_blank">WordPress Codex</a>. Below are all the useful links for WordPress information.</p>
                         	<ul>
                                 <li><a href="https://developer.wordpress.org/advanced-administration/before-install/howto-install/" target="_blank"><strong>[WordPress Codex]</strong></a> - General info about WordPress and how to install on your server.</li>
                                 <li><a href="https://wordpress.org/documentation/article/first-steps-with-wordpress-classic/" target="_blank"><strong>[First Steps With WordPress]</strong></a> - General info about multiple topics about WordPress.</li>
                                 <li><a href="http://codex.wordpress.org/FAQ_New_To_WordPress" target="_blank"><strong> [FAQ New To WordPress]</strong></a> - The most popular FAQ’s regarding WordPress.</li>
                             </ul>
+                        </div>
                     </section>
 
 
                     <!-- Install Themes by Themesflat -->
                     <section id="theme_installation">
-                        <div class="page-header"><h3>Theme Installation via WordPress</h3></div>
-                        <p>
-                            After purchase and download we have file <strong>themename.zip</strong>.
-                            Continue we need to extract files. You will find 3 folders: 1. theme, 2. theme-child, 3. documentation.
-                        </p>
-                        <p>Please follow the steps below to install the theme.</p>
+                        <div class="page-header"><h3>Theme Installation via WordPress</h3>
+                            <p>
+                                After purchase and download we have file <strong>themename.zip</strong>.
+                                Continue we need to extract files. You will find 3 folders: 1. theme, 2. theme-child, 3. documentation.
+                            </p>
+                            <p>Please follow the steps below to install the theme.</p>
 
-                            <h4>Watch the video One Click Install Demo</h4>
+                            <div><h4>Watch the video One Click Install Demo</h4>
                                 <div>
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/4lfkxLJKloM" title="How to import WordPress Theme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                 </div>
+                            </div>
 
-                        <h4 id="theme_installation_install_by_WordPress_theme_manager">Install by WordPress Theme Manager</h4>
-                            <p>This is probably the simplest way for most users. Here are the steps you need to take:</p>
-                            <ol>
-                                <li>
-                                    <strong>Step 1</strong> - Login to your WordPress Dashboard.
-                                    <div class="screenshot-item"><img src="assets/images/login-admin.jpg" width="1350px"></div>
-                                </li>
-
-                                <li>
-                                    <strong>Step 2</strong> - Go to <strong>Appearance > Themes</strong>. Then click <strong>Add New</strong> button at the top of the screen.
-                                    <div class="screenshot-item"><img src="assets/images/addnew-button-theme.png" width="1350px"></div>
-                                </li>
-
-                                <li>
-                                    <strong>Step 3</strong> - Click on the <strong>Upload</strong> button at the top.
-                                    <div class="screenshot-item"><img src="assets/images/upload-button-theme.jpg" width="1350px"></div>
-                                </li>
-
-                                <li>
-                                    <strong>Step 4</strong> - Click <strong>Choose File</strong> and select the <code>themename.zip</code> file.
-                                    <div class="screenshot-item"><img src="assets/images/choose-theme.jpg" width="1350px"></div>
-                                </li>
-
-                                <li>
-                                    <strong>Step 5</strong> - Click <strong>Install</strong> and wait a moment.
-                                    <div class="screenshot-item"><img src="assets/images/import_01.jpg" width="1350px"></div>
+                            <div id="theme_installation_install_by_WordPress_theme_manager"><h4>Install by WordPress Theme Manager</h4>
+                                <p>This is probably the simplest way for most users. Here are the steps you need to take:</p>
+                                <ol>
+                                    <li>
+                                        <strong>Step 1</strong> - Login to your WordPress Dashboard.
+                                        <div class="screenshot-item"><img src="assets/images/install/login-admin.jpg" width="1350px"></div>
                                     </li>
 
-                                    <div class="alert">
-                                    <strong>Note:</strong><br>
-                                    After installing the <strong>Main</strong> theme, if you want to use the <strong>Child</strong> theme, please install it the same way as above.
-                                    </div>
+                                    <li>
+                                        <strong>Step 2</strong> - Go to <strong>Appearance > Themes</strong>. Then click <strong>Add New</strong> button at the top of the screen.
+                                        <div class="screenshot-item"><img src="assets/images/install/addnew-button-theme.png" width="1350px"></div>
+                                    </li>
 
-                                <li>
-                                    <strong>Step 6</strong> - Once installed, click <strong>Activate</strong> to enable the theme.
-                                    <div class="screenshot-item"><img src="assets/images/import_02.jpg" width="1350px"></div>
-                                </li>
+                                    <li>
+                                        <strong>Step 3</strong> - Click on the <strong>Upload</strong> button at the top.
+                                        <div class="screenshot-item"><img src="assets/images/install/upload-button-theme.jpg" width="1350px"></div>
+                                    </li>
 
-                                <li>
-                                    <strong>Step 7</strong> - A notice will appear at the top of the dashboard. Click <strong>Begin installing plugins</strong>.
-                                    <p>
-                                        The theme requires these plugins: <strong>Contact Form 7</strong>, <strong>Elementor</strong>, <strong>Vineta Addon</strong>, <strong>WooCommerce</strong>, <strong>One Click Demo Import</strong>, <strong>MC4WP: Mailchimp for WordPress</strong>, <strong>WCBoost - Products Compare</strong>, <strong>WCBoost - Variation Swatches</strong>, <strong>WCBoost - Wishlist</strong>.
-                                        <br>
-                                        Recommended: <strong>WPML</strong>, <strong>FOX - Currency Switcher Professional for WooCommerce</strong>.
-                                    </p>
-                                    <div class="screenshot-item"><img src="assets/images/import_03.jpg" width="1350px"></div>
-                                </li>
+                                    <li>
+                                        <strong>Step 4</strong> - Click <strong>Choose File</strong> and select the <code>themename.zip</code> file.
+                                        <div class="screenshot-item"><img src="assets/images/install/choose-theme.jpg" width="1350px"></div>
+                                    </li>
 
-                                <li>
-                                    <strong>Step 8</strong> - Go to <strong>Dashboard > Appearance > Install Plugins</strong>. Check all required plugins and activate them.
-                                    <div class="screenshot-item"><img src="assets/images/import_04.jpg" width="1350px"></div>
-                                    <div class="screenshot-item"><img src="assets/images/import_05.jpg" width="1350px"></div>
-                                    <div class="screenshot-item"><img src="assets/images/01_09.jpg" width="1350px"></div>
-                                </li>
+                                    <li>
+                                        <strong>Step 5</strong> - Click <strong>Install</strong> and wait a moment.
+                                        <div class="screenshot-item"><img src="assets/images/install/import_01.jpg" width="1350px"></div>
+                                        </li>
 
-                                <li>
-                                    <strong>Go to Appearance > Import Demo Data</strong>
-                                    <div class="screenshot-item"><img src="assets/images/import_06.jpg" width="1350px"></div>
+                                        <div class="alert">
+                                        <strong>Note:</strong><br>
+                                        After installing the <strong>Main</strong> theme, if you want to use the <strong>Child</strong> theme, please install it the same way as above.
+                                        </div>
 
-                                    <strong>Select demo import</strong>
-                                    <div class="screenshot-item"><img src="assets/images/import_07.jpg" width="1350px"></div>
-                                </li>
+                                    <li>
+                                        <strong>Step 6</strong> - Once installed, click <strong>Activate</strong> to enable the theme.
+                                        <div class="screenshot-item"><img src="assets/images/install/import_02.jpg" width="1350px"></div>
+                                    </li>
 
-                                <li>
-                                    <strong>Click Continue & Import</strong>
-                                    <div class="screenshot-item"><img src="assets/images/import_08.jpg" width="1350px"></div>
+                                    <li>
+                                        <strong>Step 7</strong> - A notice will appear at the top of the dashboard. Click <strong>Begin installing plugins</strong>.
+                                        <p>
+                                            The theme requires these plugins: <strong>Contact Form 7</strong>, <strong>Elementor</strong>, <strong>Vineta Addon</strong>, <strong>WooCommerce</strong>, <strong>One Click Demo Import</strong>, <strong>MC4WP: Mailchimp for WordPress</strong>, <strong>WCBoost - Products Compare</strong>, <strong>WCBoost - Variation Swatches</strong>, <strong>WCBoost - Wishlist</strong>.
+                                            <br>
+                                            Recommended: <strong>WPML</strong>, <strong>FOX - Currency Switcher Professional for WooCommerce</strong>.
+                                        </p>
+                                        <div class="screenshot-item"><img src="assets/images/install/import_03.jpg" width="1350px"></div>
+                                    </li>
 
-                                    <strong>And Wait</strong>
-                                    <div class="screenshot-item"><img src="assets/images/import_09.jpg" width="1350px"></div>
-                                </li>
-                            </ol>
+                                    <li>
+                                        <strong>Step 8</strong> - Go to <strong>Dashboard > Appearance > Install Plugins</strong>. Check all required plugins and activate them.
+                                        <div class="screenshot-item"><img src="assets/images/install/import_04.jpg" width="1350px"></div>
+                                        <div class="screenshot-item"><img src="assets/images/install/import_05.jpg" width="1350px"></div>
+                                    </li>
 
-                        <h4 id="theme_installation_install_through_ftp_upload">Install through FTP upload</h4>
-                            <p>If you want to install via FTP, here are the steps:</p>
-                            <ul>
-                                <li>Using an FTP client, login to your server.</li>
-                                <li>Navigate to the <code>/wp-content/themes/</code> directory.</li>
-                                <li>Upload the <strong>Vineta</strong> theme folder into that directory.</li>
-                            </ul>
-                            <p>Once installation is complete, your Vineta theme will be ready to use.</p>
+                                    <li>
+                                        <strong>Go to Appearance > Import Demo Data</strong>
+                                        <div class="screenshot-item"><img src="assets/images/install/import_06.jpg" width="1350px"></div>
+
+                                        <strong>Select demo import</strong>
+                                        <div class="screenshot-item"><img src="assets/images/install/import_07.jpg" width="1350px"></div>
+                                    </li>
+
+                                    <li>
+                                        <strong>Click Continue & Import</strong>
+                                        <div class="screenshot-item"><img src="assets/images/install/import_08.jpg" width="1350px"></div>
+
+                                        <strong>And Wait</strong>
+                                        <div class="screenshot-item"><img src="assets/images/install/import_09.jpg" width="1350px"></div>
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div id="theme_installation_install_through_ftp_upload"><h4>Install through FTP upload</h4>
+                                <p>If you want to install via FTP, here are the steps:</p>
+                                <ul>
+                                    <li>Using an FTP client, login to your server.</li>
+                                    <li>Navigate to the <code>/wp-content/themes/</code> directory.</li>
+                                    <li>Upload the <strong>Vineta</strong> theme folder into that directory.</li>
+                                </ul>
+                                <p>Once installation is complete, your Vineta theme will be ready to use.</p>
+                            </div>
+                        </div>
                     </section>
 
 
                     <!-- Customize theme by Themesflat -->
                     <section id="theme_option">
-                    <div class="page-header">
-                        <h3>Theme Option</h3>
-                        <p>
-                        To start customizing the theme, in the Admin page please go to 
-                        <strong>Dashboard &gt; Appearance &gt; Customize</strong>.
-                        </p>
-                    </div>
-
-                    <div class="screenshot-item">
-                        <img src="assets/images/theme_01.jpg" alt="Theme Option Screenshot" width="1350px">
-                    </div>
-
-                    <div class="alert">
-                        <strong>Note:</strong><br>
-                        Please remember to click <strong>Save &amp; Publish</strong> after customizing to save changes.<br>
-                        These are global settings, so they affect the entire site. However, they can be overridden per post or page.
-                    </div>
-
-                    <h4 id="general">General</h4>
-
-                    <ol>
-                        <li>
-                            <h5>Site Information</h5>
+                        <div class="page-header">
+                            <h3>Theme Option</h3>
                             <p>
-                                To <strong>Customize Theme</strong>, go to: 
-                                <strong>Dashboard → Appearance → Customize → Site Identity</strong>
+                            To start customizing the theme, in the Admin page please go to 
+                            <strong>Dashboard &gt; Appearance &gt; Customize</strong>.
                             </p>
-                            <ul>
+                        </div>
+
+                        <div class="screenshot-item">
+                            <img src="assets/images/theme/theme_01.jpg" alt="Theme Option Screenshot" width="1350px">
+                        </div>
+
+                        <div class="alert">
+                            <strong>Note:</strong><br>
+                            Please remember to click <strong>Save &amp; Publish</strong> after customizing to save changes.<br>
+                            These are global settings, so they affect the entire site. However, they can be overridden per post or page.
+                        </div>
+
+                        <div id="general"><h4>General</h4>
+                            <ol>
                                 <li>
-                                <strong>Site Title:</strong> You can set and change your site title.
+                                    <h5>Site Information</h5>
+                                    <p>
+                                        To customize the theme, navigate to: 
+                                        <strong>Dashboard → Appearance → Customize → Site Identity</strong>
+                                    </p>
+                                    <ul>
+                                        <li><strong>Site Title:</strong> Set or update your website’s title.</li>
+                                        <div class="screenshot-item">
+                                        <img src="assets/images/theme/theme_02.jpg" alt="Site Title Screenshot" width="1350" />
+                                        </div>
+                                        <li><strong>Tagline:</strong> A short description that summarizes your site.</li>
+                                        <li><strong>Site Icon:</strong> The icon that appears in browser tabs, bookmarks, and WordPress mobile apps.</li>
+                                    </ul>
                                 </li>
-                                <div class="screenshot-item">
-                                    <img src="assets/images/theme_02.jpg" alt="Site Title Screenshot" width="1350px">
-                                </div>
-                                <li><strong>Tagline:</strong> A short description of your site.</li>
-                                <li><strong>Site Icon:</strong> Icons that appear in browser tabs, bookmarks, and WordPress mobile apps.</li>
-                            </ul>
-                        </li>
 
-                        <li>
-                            <h5>Site Display</h5>
-                            <p>
-                                To <strong>Customize Theme</strong>, go to: 
-                                <strong>Dashboard → Appearance → Customize → General</strong>
-                            </p>
-                            <ul>
-                                <li>strong>Enable Smooth Scroll:</strong> Enable or disable smooth scrolling.</li>
-                                <li><strong>Enable Preload:</strong> Show preloader when navigating between pages.</li>
-                                <li><strong>Go To Button:</strong> Enable or disable the “Go to Top” button.</li>
-                            </ul>
-                            <div class="screenshot-item">
-                                <img src="assets/images/theme_03.jpg" alt="Site Display Screenshot" width="1350px">
-                            </div>
-                        </li>
-                    </ol>
+                                <li>
+                                    <h5>Site Display</h5>
+                                    <p>
+                                        To customize the theme, navigate to: 
+                                        <strong>Dashboard → Appearance → Customize → General</strong>
+                                    </p>
+                                    <ul>
+                                        <li><strong>Enable Smooth Scroll:</strong> Toggle smooth scrolling on or off.</li>
+                                        <li><strong>Enable Preload:</strong> Show a preloader while navigating between pages.</li>
+                                        <li><strong>Go To Top Button:</strong> Enable or disable the "Back to Top" button for user convenience.</li>
+                                    </ul>
+                                    <div class="screenshot-item">
+                                        <img src="assets/images/theme/theme_03.jpg" alt="Site Display Screenshot" width="1350" />
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
                     </section>
 
                     <!-- Customize Header -->
                     <section id="header_customize">
                         <div>
                             <h4 id="theme_customization_header">Header</h4>
-                            <p>
-                            To set up the default Header Style, navigate to 
-                            <strong>Dashboard → Appearance → Customize → Header</strong>.
-                            </p>
-
-                            <ol>
-                            <li>
-                                <h5>Custom Logo</h5>
+                            <p>To set up the default Header Style, navigate to <strong>Dashboard → Appearance → Customize → Header</strong>.</p>
+                            <div><h5>Custom Logo</h5>
                                 <div class="screenshot-item">
-                                    <img src="assets/images/theme_04.jpg" alt="Custom Logo Screenshot" width="1350px">
+                                    <img src="assets/images/theme/theme_04.jpg" alt="Custom Logo Screenshot" width="1350">
                                 </div>
-                                <ul>
-                                    <li><strong>Upload Your Logo:</strong> Drag or select your new logo here.</li>
-                                    <li><strong>Upload Your Logo On Mobile:</strong> Drag or select your new mobile logo here.</li>
-                                    <li><strong>Logo Size:</strong> Choose the size for the logo.</li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <h5>Top Bar</h5>
+                                <p><strong>Upload Your Logo:</strong> Drag or select your new logo.</p>
+                                <p><strong>Upload Logo for Mobile:</strong> Drag or select your new mobile logo.</p>
+                                <p><strong>Logo Size:</strong> Choose the desired logo size.</p>
+                            </div>
+                            <div><h5>Top Bar</h5>
                                 <div class="screenshot-item">
-                                    <img src="assets/images/theme_05.jpg" alt="Top Bar Screenshot" width="1350px">
+                                    <img src="assets/images/theme/theme_05.jpg" alt="Top Bar Screenshot" width="1350">
                                 </div>
                                 <div class="screenshot-item">
-                                    <img src="assets/images/theme_06.jpg" alt="Top Bar Settings Screenshot" width="1350px">
+                                    <img src="assets/images/theme/theme_06.jpg" alt="Top Bar Settings Screenshot" width="1350">
                                 </div>
-                                <ul>
-                                    <li><strong>Topbar:</strong> Enable or disable the top bar.</li>
-                                    <li><strong>Social:</strong> Enable social icons, configured under the <strong>General</strong> tab.</li>
-                                    <li><strong>Marquee:</strong> Enable scrolling text and input content to display.</li>
-                                    <li>
-                                        <strong>Language:</strong> To use the language switcher, install and activate 
-                                        the <a href="https://wpml.org/" target="_blank">WPML plugin</a> (not included).
-                                    </li>
-                                    <li>
-                                        <strong>Currency:</strong> To enable the currency switcher, install and activate a third-party plugin. 
-                                        Vineta supports 
-                                        <a href="https://wordpress.org/plugins/woocommerce-currency-switcher/" target="_blank">
-                                        FOX – Currency Switcher Professional for WooCommerce</a>.
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <h5>Navigation</h5>
+                                <p><strong>Topbar:</strong> Enable or disable the top bar.</p>
+                                <p><strong>Social:</strong> Enable social icons (configure under the <strong>General</strong> tab).</p>
+                                <p><strong>Marquee:</strong> Enable scrolling text and input content to display.</p>
+                                <p><strong>Language:</strong> To use the language switcher, install and activate the <a href="https://wpml.org/" target="_blank">WPML plugin</a> (not included).</p>
+                                <p><strong>Currency:</strong> To enable currency switching, install a third-party plugin. This theme supports 
+                                    <a href="https://wordpress.org/plugins/woocommerce-currency-switcher/" target="_blank">FOX – Currency Switcher Professional for WooCommerce</a>.
+                                </p>
+                            </div>
+                            <div><h5>Navigation</h5>
                                 <div class="screenshot-item">
-                                    <img src="assets/images/theme_07.jpg" alt="Navigation Settings Screenshot" width="1350px">
+                                    <img src="assets/images/theme/theme_07.jpg" alt="Navigation Settings Screenshot" width="1350">
                                 </div>
-                            </li>
-
-                            <li>
-                                <h5>Header Options</h5>
+                            </div>
+                            <div><h5>Header Options</h5>
                                 <div class="screenshot-item">
-                                    <img src="assets/images/theme_08.jpg" alt="Header Options Screenshot" width="1350px">
+                                    <img src="assets/images/theme/theme_08.jpg" alt="Header Options Screenshot" width="1350">
                                 </div>
-                                <ul>
-                                    <li><strong>Header Style:</strong> Choose the default header style.</li>
-                                    <li><strong>Header Absolute:</strong> Enable or disable absolute positioning.</li>
-                                    <li><strong>Header Sticky:</strong> Enable or disable sticky header.</li>
-                                    <li><strong>Search Box:</strong> Enable or disable the search box in header.</li>
-                                    <li><strong>Header Login/Register:</strong> Enable or disable login/register links.</li>
-                                    <li><strong>Header Wishlist:</strong> Enable or disable wishlist icon.</li>
-                                    <li><strong>Header Cart:</strong> Enable or disable shopping cart icon.</li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <h5>Search Popup</h5>
+                                <p><strong>Header Style:</strong> Select a default header style.</p>
+                                <p><strong>Header Absolute:</strong> Enable or disable absolute positioning.</p>
+                                <p><strong>Header Sticky:</strong> Enable or disable sticky behavior for the header.</p>
+                                <p><strong>Search Box:</strong> Show or hide the search box in the header.</p>
+                                <p><strong>Header Login/Register:</strong> Enable or disable login/register links.</p>
+                                <p><strong>Header Wishlist:</strong> Enable or disable the wishlist icon.</p>
+                                <p><strong>Header Cart:</strong> Enable or disable the shopping cart icon.</p>
+                            </div>
+                            <div><h5>Search Popup</h5>
                                 <div class="screenshot-item">
-                                <img src="assets/images/theme_09.jpg" alt="Search Popup Screenshot" width="1350px">
+                                    <img src="assets/images/theme/theme_09.jpg" alt="Search Popup Screenshot" width="1350">
                                 </div>
-                                <ul>
-                                <li><strong>Category:</strong> Choose the number of categories to display.</li>
-                                <li><strong>Product Type:</strong> Choose the number of product types to display.</li>
-                                <li><strong>Product Item:</strong> Choose the number of product items to display.</li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <h5>Custom Menu</h5>
-                                <p>To set up a custom menu layout, go to <strong>Dashboard → Appearance → Customize → Menus</strong>.</p>
-                                <ul>
-                                    <li>Select one menu to edit or create a new one.</li>
-                                    <div class="screenshot-item">
-                                        <img src="assets/images/theme_10.jpg" alt="Menu Edit Screenshot" width="1350px">
-                                    </div>
-                                    <li>Drag and drop items to rearrange the menu.</li>
-                                    <div class="screenshot-item">
-                                        <img src="assets/images/theme_11.jpg" alt="Menu Drag and Drop Screenshot" width="1350px">
-                                    </div>
-                                </ul>
-                            </li>
-                            </ol>
+                                <p><strong>Category:</strong> Choose how many categories to display.</p>
+                                <p><strong>Product Type:</strong> Choose how many product types to display.</p>
+                                <p><strong>Product Item:</strong> Choose how many product items to display.</p>
+                            </div>
+                            <div><h5>Custom Menu</h5>
+                                <p>To create or customize a menu layout, go to <strong>Dashboard → Appearance → Customize → Menus</strong>.</p>
+                                <p>Select an existing menu to edit or create a new one.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/theme/theme_10.jpg" alt="Menu Edit Screenshot" width="1350">
+                                </div>
+                                <p>Drag and drop menu items to reorder.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/theme/theme_11.jpg" alt="Menu Drag and Drop Screenshot" width="1350">
+                                </div>
+                            </div>
                         </div>
                     </section>
 
                     <!-- Customize Page Title -->
                     <section id="page_title_customize">
-                    <h4>Page Title & Breadcrumb</h4>
-                    <ol>
-                        <li>
+                        <h4>Page Title & Breadcrumb</h4>
+                        <div>
                             <h5>Page Title Style</h5>
                             <p>
-                                To set up a custom Page Title Style layout, navigate to 
-                                <strong>Dashboard → Appearance → Customize → Page Title → Page Title</strong>.
+                            To customize the page title layout, go to 
+                            <strong>Dashboard → Appearance → Customize → Page Title → Page Title</strong>.
                             </p>
                             <div class="screenshot-item">
-                                <img src="assets/images/theme_12.jpg" alt="Page Title Style Screenshot" width="1350px">
+                                <img src="assets/images/theme/theme_12.jpg" alt="Page Title Layout Settings" width="1350">
                             </div>
-                            <ul>
-                                <li>Edit the Page Title controls here:</li>
-                            </ul>
+                            <p>Use the available settings to adjust the page title style:</p>
                             <div class="screenshot-item">
-                                <img src="assets/images/theme_13.jpg" alt="Edit Page Title Controls Screenshot" width="1350px">
+                                <img src="assets/images/theme/theme_13.jpg" alt="Page Title Style Controls" width="1350">
                             </div>
-                        </li>
+                        </div>
 
-                        <li>
+                        <div>
                             <h5>Breadcrumb</h5>
-                            <ul>
-                                <li>
-                                    <strong>Enable Breadcrumbs:</strong> Turn on/off to show or hide the breadcrumbs.
-                                </li>
-                                <div class="screenshot-item">
-                                    <img src="assets/images/theme_14.jpg" alt="Breadcrumb Screenshot" width="1350px">
-                                </div>
-                                <li>
-                                    <strong>Breadcrumb Prefix:</strong> Enter prefix text for the breadcrumb.
-                                </li>
-                                <li>
-                                    <strong>Breadcrumb Separator:</strong> Enter the character you want to use as the breadcrumb separator.
-                                </li>
-                            </ul>
-                        </li>
-                    </ol>
+                            <p><strong>Enable Breadcrumbs:</strong> Show or hide breadcrumb navigation.</p>
+                            <div class="screenshot-item">
+                            <img src="assets/images/theme/theme_14.jpg" alt="Breadcrumb Settings" width="1350">
+                            </div>
+                            <p><strong>Breadcrumb Prefix:</strong> Text displayed before the breadcrumb trail.</p>
+                            <p><strong>Breadcrumb Separator:</strong> Character used to separate breadcrumb items.</p>
+                        </div>
                     </section>
+
 
                     <!-- Customize Typography -->
                     <section id="typography_customizer">
                         <h4 id="theme_customization_typography">Typography</h4>
+
                         <p>
-                            To customize typography settings, please navigate to 
+                            To customize typography settings, go to 
                             <strong>Dashboard → Appearance → Customize → Typography</strong>.
                         </p>
-                        <ol>
-                            <li>
-                                <h5>Body Font</h5>
-                                <p>
-                                    You can select the font family, font size, font weight, and font color for the body text.
-                                </p>
-                                <div class="screenshot-item">
-                                    <img src="assets/images/theme_15.jpg" alt="Body Font Settings" width="1350px">
-                                </div>
-                                <p>Blockquote Typography</p>
-                                <div class="screenshot-item">
-                                    <img src="assets/images/theme_16.jpg" alt="Blockquote Typography" width="1350px">
-                                </div>
-                            </li>
 
-                            <li>
-                                <h5>Menu Font</h5>
-                                <p>
-                                    You can customize the font family, font size, font weight, and font color for the main menu and submenu text.
-                                </p>
-                                <div class="screenshot-item">
-                                    <img src="assets/images/theme_17.jpg" alt="Menu Font Settings" width="1350px">
-                                </div>
-                                <p><strong>Submenu</strong></p>
-                                <div class="screenshot-item">
-                                    <img src="assets/images/theme_18.jpg" alt="Submenu Font Settings" width="1350px">
-                                </div>
-                            </li>
+                        <div>
+                            <h5>Body Font</h5>
+                            <p>Customize the font family, size, weight, and color for body text.</p>
+                            <div class="screenshot-item">
+                                <img src="assets/images/theme/theme_15.jpg" alt="Body Font Settings" width="1350">
+                            </div>
+                            <p>Blockquote Typography</p>
+                            <div class="screenshot-item">
+                                <img src="assets/images/theme/theme_16.jpg" alt="Blockquote Typography" width="1350">
+                            </div>
+                        </div>
 
-                            <li>
-                                <h5>Heading Font</h5>
-                                <div class="screenshot-item">
-                                    <img src="assets/images/theme_19.jpg" alt="Heading Font Settings" width="1350px">
-                                </div>
-                                <p>You can make various adjustments to heading fonts here.</p>
-                                <div class="screenshot-item">
-                                    <img src="assets/images/theme_20.jpg" alt="Heading Font Options" width="1350px">
-                                </div>
-                            </li>
-                        </ol>
+                        <div>
+                            <h5>Menu Font</h5>
+                            <p>
+                            Customize the font family, size, weight, and color for the main menu and submenus.
+                            </p>
+                            <div class="screenshot-item">
+                                <img src="assets/images/theme/theme_17.jpg" alt="Main Menu Font Settings" width="1350">
+                            </div>
+                            <p><strong>Submenu:</strong></p>
+                            <div class="screenshot-item">
+                                <img src="assets/images/theme/theme_18.jpg" alt="Submenu Font Settings" width="1350">
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5>Heading Font</h5>
+                            <p>Adjust the font settings for all heading levels (H1–H6).</p>
+                            <div class="screenshot-item">
+                                <img src="assets/images/theme/theme_19.jpg" alt="Heading Font Settings" width="1350">
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="assets/images/theme/theme_20.jpg" alt="Heading Font Options" width="1350">
+                            </div>
+                        </div>
                     </section>
+
 
                     <!-- Customize layout -->
                     <section id="layout_amp_styles">
-                    <h4 id="theme_customization_layout_amp_styles">Layout &amp; Styles</h4>
+                        <div id="theme_customization_layout_amp_styles"><h4>Layout &amp; Styles</h4>
+                            <p>In the Layout &amp; Styles section, we provide several options to customize the theme's layout and styles.</p>
+                            <ol>
+                                <li>
+                                <h5>Scheme Color</h5>
+                                <p>
+                                    To customize the page title style layout, please navigate to 
+                                    <strong>Dashboard → Appearance → Customize → Color</strong>.
+                                </p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/theme/theme_21.jpg" alt="Customize Color Page" width="1350px">
+                                </div>
 
-                    <p>
-                        In the Layout &amp; Styles section, we provide several options to customize the theme's layout and styles.
-                    </p>
+                                <p>
+                                    You can set unlimited colors for your General settings, including Primary Color, Secondary Color, Accent Color, and Background Color. 
+                                    Navigate to <strong>Dashboard → Appearance → Customize → Color → General</strong>.
+                                </p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/theme/theme_22.jpg" alt="General Color Settings" width="1350px">
+                                </div>
 
-                    <ol>
-                        <li>
-                        <h5>Scheme Color</h5>
-                        <p>
-                            To customize the page title style layout, please navigate to 
-                            <strong>Dashboard → Appearance → Customize → Color</strong>.
-                        </p>
-                        <div class="screenshot-item">
-                            <img class="img-doc" src="assets/images/theme_21.jpg" alt="Customize Color Page" width="1350px">
+                                <p>
+                                    To customize header colors, go to 
+                                    <strong>Dashboard → Appearance → Customize → Color → Header</strong>.
+                                </p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/theme/theme_23.jpg" alt="Header Color Settings" width="1350px">
+                                </div>
+
+                                <p>
+                                    To customize footer colors, go to 
+                                    <strong>Dashboard → Appearance → Customize → Color → Footer</strong>.
+                                </p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/theme/theme_24.jpg" alt="Footer Color Settings" width="1350px">
+                                </div>
+
+                                <p>
+                                    To set a background image, navigate to 
+                                    <strong>Dashboard → Appearance → Customize → Background Image</strong>.
+                                </p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/theme/theme_25.jpg" alt="Background Image Settings" width="1350px">
+                                </div>
+
+                                <p>
+                                    To customize widgets, navigate to 
+                                    <strong>Dashboard → Appearance → Customize → Widgets</strong>.
+                                </p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/theme/theme_26.jpg" alt="Widgets Settings" width="1350px">
+                                </div>
+                                </li>
+                            </ol>
                         </div>
-
-                        <p>
-                            You can set unlimited colors for your General settings, including Primary Color, Secondary Color, Accent Color, and Background Color. 
-                            Navigate to <strong>Dashboard → Appearance → Customize → Color → General</strong>.
-                        </p>
-                        <div class="screenshot-item">
-                            <img class="img-doc" src="assets/images/theme_22.jpg" alt="General Color Settings" width="1350px">
-                        </div>
-
-                        <p>
-                            To customize header colors, go to 
-                            <strong>Dashboard → Appearance → Customize → Color → Header</strong>.
-                        </p>
-                        <div class="screenshot-item">
-                            <img class="img-doc" src="assets/images/theme_23.jpg" alt="Header Color Settings" width="1350px">
-                        </div>
-
-                        <p>
-                            To customize footer colors, go to 
-                            <strong>Dashboard → Appearance → Customize → Color → Footer</strong>.
-                        </p>
-                        <div class="screenshot-item">
-                            <img class="img-doc" src="assets/images/theme_24.jpg" alt="Footer Color Settings" width="1350px">
-                        </div>
-
-                        <p>
-                            To set a background image, navigate to 
-                            <strong>Dashboard → Appearance → Customize → Background Image</strong>.
-                        </p>
-                        <div class="screenshot-item">
-                            <img class="img-doc" src="assets/images/theme_25.jpg" alt="Background Image Settings" width="1350px">
-                        </div>
-
-                        <p>
-                            To customize widgets, navigate to 
-                            <strong>Dashboard → Appearance → Customize → Widgets</strong>.
-                        </p>
-                        <div class="screenshot-item">
-                            <img class="img-doc" src="assets/images/theme_26.jpg" alt="Widgets Settings" width="1350px">
-                        </div>
-                        </li>
-                    </ol>
                     </section>
 
 
@@ -600,125 +572,197 @@
                             <strong>Dashboard &gt; Appearance &gt; Customize &gt; Footer</strong>.
                         </p>
                         <div class="screenshot-item">
-                            <img class="img-doc" src="assets/images/theme_27.jpg" alt="Footer Customize Page" width="1350px">
+                            <img class="img-doc" src="assets/images/theme/theme_27.jpg" alt="Footer Customize Page" width="1350px">
                         </div>
                         <ol>
                             <li>
                                 <h5>Top</h5>
                                 <p>You can customize the top of the footer or turn it off.</p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/theme_28.jpg" alt="Footer Top Settings" width="1350px">
+                                    <img class="img-doc" src="assets/images/theme/theme_28.jpg" alt="Footer Top Settings" width="1350px">
                                 </div>
                             </li>
                             <li>
                                 <h5>Menu Footer</h5>
                                 <p>Go to <strong>Dashboard &gt; Appearance &gt; Widgets</strong> to edit the footer menu.</p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/theme_29.jpg" alt="Footer Menu Widgets" width="1350px">
+                                    <img class="img-doc" src="assets/images/theme/theme_29.jpg" alt="Footer Menu Widgets" width="1350px">
                                 </div>
                             </li>
                             <li>
                                 <h5>Bottom</h5>
                                 <p>You can edit the contents of the bottom section here.</p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/theme_30.jpg" alt="Footer Bottom Settings" width="1350px">
+                                    <img class="img-doc" src="assets/images/theme/theme_30.jpg" alt="Footer Bottom Settings" width="1350px">
                                 </div>
                             </li>
                         </ol>
                     </section>
 
                     <!-- Woo-commerce Features by Themesflat -->
-                    <section id="woocommerce_setting">
-                        <h3 id="woocommerce_setting">WooCommerce:</h3>
-                            <h4 id="cart">1. Cart</h4>
-                                <img class="img-doc" src="assets/images/cart_01.jpg" alt="Cart screenshot" width="1350" />
-
-                                <h5>Cart Page</h5>
-                                <ul>
-                                    <li>
-                                        <p><strong>Step 1:</strong> From the admin dashboard, navigate to <em>WooCommerce → Settings → Advanced → Cart Page</em>.</p>
-                                    </li>
-                                    <li>
-                                        <p><strong>Step 2:</strong> Enable Quick View. You can also customize the appearance under <strong>Style Options</strong>.</p>
-                                    </li>
-                                    <li>
-                                        <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/cart_02.jpg" alt="Cart step 2 screenshot" width="1350" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p><strong>Step 3:</strong> Click <strong>Save Changes</strong> after finishing your setup.</p>
-                                    </li>
-                                </ul>
-
-                                <h5>Shipping</h5>
-                                <ul>
-                                    <li>
-                                        <p><strong>Step 1:</strong> From the admin dashboard, navigate to <em>WooCommerce → Settings → Advanced → Shipping</em>.</p>
-                                    </li>
-                                    <li>
-                                        <p><strong>Step 2:</strong> Set up <a href="https://woocommerce.com/document/setting-up-shipping-zones/" target="_blank">Shipping Zones</a>.</p>
-                                    </li>
-                                    <li>
-                                        <p><strong>Step 3:</strong> Create a Free Shipping method and define the minimum order amount.</p>
-                                    </li>
-                                    <li>
-                                        <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/shipping.jpg" alt="Shipping setup screenshot" width="1350" />
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <h5>Coupons</h5>
-                                <p>To enable coupons in the Cart Drawer, Cart Page, and Checkout Page, go to <em>WooCommerce → Settings → General</em> and check the <strong>Enable coupons</strong> option.
-                                </p>
+                    <section  id="woocommerce_setting">
+                        <div id="woocommerce_setting"><h3>WooCommerce:</h3>
+                            <div id="cart"><h4>1. Cart</h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/coupon_01.jpg" alt="Enable coupons screenshot" width="1350" />
+                                    <img class="img-doc" src="assets/images/shop-archive/cart_01.jpg" alt="Cart screenshot" width="1350" />
                                 </div>
 
-                            <h4 id="order">2. Order</h4>
-                            <ul>
-                                <li>
-                                    <p>From the admin dashboard, navigate to <em>WooCommerce → Orders</em>.</p>
-                                </li>
-                                <li>
-                                    <p>You can view total orders on a daily, weekly, or monthly basis.</p>
-                                </li>
-                                <li>
+                                <div><h5>Cart Page</h5>
+                                    <p><strong>Step 1:</strong> From the admin dashboard, navigate to <em>WooCommerce → Settings → Advanced → Cart Page</em>.</p>
+                                    <p><strong>Step 2:</strong> Enable Quick View. You can also customize the appearance under <strong>Style Options</strong>.</p>
                                     <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/order.jpg" alt="Orders page screenshot" width="1350" />
+                                        <img class="img-doc" src="assets/images/shop-archive/cart_02.jpg" alt="Cart step 2 screenshot" width="1350" />
                                     </div>
-                                </li>
-                            </ul>
+                                    <p><strong>Step 3:</strong> Click <strong>Save Changes</strong> after finishing your setup.</p>
+                                </div>
 
-                            <h4 id="coupons">3. Coupons</h4>
-                            <ul>
-                                <li>
-                                    <p>From the admin dashboard, navigate to <em>Marketing → Coupons</em>.</p>
-                                </li>
-                                <li>
-                                    <p>Click the <strong>Add coupon</strong> button to create a new coupon.</p>
+                                <div><h5>Shipping</h5>                               
+                                    <p><strong>Step 1:</strong> From the admin dashboard, navigate to <em>WooCommerce → Settings → Advanced → Shipping</em>.</p>
+                                    <p><strong>Step 2:</strong> Set up <a href="https://woocommerce.com/document/setting-up-shipping-zones/" target="_blank">Shipping Zones</a>.</p>
+                                    <p><strong>Step 3:</strong> Create a Free Shipping method and define the minimum order amount.</p>
                                     <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/coupon_02.jpg" alt="Add coupon screenshot" width="1350" />
+                                        <img class="img-doc" src="assets/images/shop-archive/shipping.jpg" alt="Shipping setup screenshot" width="1350" />
                                     </div>
-                                </li>
-                                <li>
-                                    <p>Fill in the required information and click <strong>Publish</strong> to save the coupon.</p>
-                                    <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/coupon_03.jpg" alt="Publish coupon screenshot" width="1350" />
-                                    </div>
-                                </li>
-                            </ul>
+                                </div>
 
+                                <div><h5>Coupons</h5>
+                                    <p>To enable coupons in the Cart Drawer, Cart Page, and Checkout Page, go to <em>WooCommerce → Settings → General</em> and check the <strong>Enable coupons</strong> option.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" src="assets/images/shop-archive/coupon_01.jpg" alt="Enable coupons screenshot" width="1350" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="order"><h4>2. Order</h4>
+                                <p>From the admin dashboard, navigate to <em>WooCommerce → Orders</em>.</p>
+                                <p>You can view total orders on a daily, weekly, or monthly basis.</p>
+
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/order.jpg" alt="Orders page screenshot" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="coupons"><h4>3. Coupons</h4>
+                                <p>From the admin dashboard, navigate to <em>Marketing → Coupons</em>.</p>
+                                <p>Click the <strong>Add coupon</strong> button to create a new coupon.</p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/coupon_02.jpg" alt="Add coupon screenshot" width="1350" />
+                                </div>
+                                <p>Fill in the required information and click <strong>Publish</strong> to save the coupon.</p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/coupon_03.jpg" alt="Publish coupon screenshot" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="top-category"><h4>4. Top Categories</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_01.jpg" alt="Top Categories" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Shop → Top Categories</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_02.jpg" alt="Top Categories" width="1350" />
+                                </div>
+                            
+                            </div>
+                            
+                            <div id="shop-page-title"><h4>5. Shop Page Title</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_03.jpg" alt="Shop Page Title" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Shop → Shop Page Title</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_04.jpg" alt="Shop Page Title" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="catalog"><h4>6. Catalog Toolbar</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_05.jpg" alt="Catalog Toolbar" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Shop → Catalog Toolbar</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_06.jpg" alt="Catalog Toolbar" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="shop-layout"><h4>7. Shop Layout</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_07.jpg" alt="Shop Layout" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Shop → Shop Layout</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_08.jpg" alt="Shop Layout" width="1350" />
+                                </div>                            
+                            </div>
+
+                            <div id="product-card"><h4>8. Product Card</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_09.jpg" alt="Product Card" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Shop → Product Card</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_10.jpg" alt="Product Card" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="product-badge"><h4>9. Product Badges</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_11.jpg" alt="Product Badges" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Shop → Product Badges</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_12.jpg" alt="Product Badges" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="mini-cart"><h4>10. Mini Cart</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_13.jpg" alt="Mini Cart" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Shop → Mini Cart</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_14.jpg" alt="Mini Cart" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="icon-box"><h4>11. Icon Box</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_15.jpg" alt="Icon Box" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Shop → Icon Box</strong> and change content</p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_16.jpg" alt="Icon Box" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="live-notification"><h4>12. Live Notification</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_17.jpg" alt="Live Notification" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Shop → Live Notification</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_18.jpg" alt="Live Notification" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="cookies"><h4>13. Cookies</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_19.jpg" alt="Cookies" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Shop → Cookies</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/shop-archive/shop-archive_20.jpg" alt="Cookies" width="1350" />
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
                     <!-- ECommerce Features by Themesflat -->                    
-                    <section id="ecommerce-features">
-                        <div id="ecommerce-features">
-                        <h3>ECommerce Features</h3>
+                    <section>
+                        <div id="ecommerce-features"><h3>ECommerce Features</h3>
                             <div id="salecountdown"><h4>1. Sale Countdown Timer</h4>                                
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_01.jpg" alt="Sale countdown timer" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_01.jpg" alt="Sale countdown timer" width="1350" />
                                 </div>
 
                                 <ol>
@@ -731,13 +775,13 @@
                                     <li>
                                         <p><strong>Step 3:</strong> In the Product data section, select <strong>Simple product</strong> as the product type.</p>
                                         <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/woo_02.jpg" alt="Simple product type" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/woo_02.jpg" alt="Simple product type" width="1350" />
                                         </div>
                                     </li>
                                     <li>
                                         <p><strong>Step 4:</strong> In the <strong>General</strong> tab, click <strong>Schedule</strong> next to the Sale price field, then set the sale price and its valid date range.</p>
                                         <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/woo_03.jpg" alt="Schedule sale" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/woo_03.jpg" alt="Schedule sale" width="1350" />
                                         </div>
                                     </li>
                                 </ol>
@@ -750,13 +794,13 @@
                                     <li>
                                         <p><strong>Step 4:</strong> In the <strong>General</strong> tab, click <strong>Schedule</strong> next to the Sale price field, then set the sale price and its valid date range.</p>
                                         <div class="screenshot-item">
-                                            <img class="img-doc" src="assets/images/woo_04.jpg" alt="Schedule sale for variations" width="1350" />
+                                            <img class="img-doc" src="assets/images/woo/woo_04.jpg" alt="Schedule sale for variations" width="1350" />
                                         </div>
                                     </li>
                                     <li>
                                         <p><strong>Step 5:</strong> Configure the sale price, valid time range, and any other necessary details for each variation.</p>
                                         <div class="screenshot-item">
-                                            <img class="img-doc" src="assets/images/woo_05.jpg" alt="Variation settings" width="1350" />
+                                            <img class="img-doc" src="assets/images/woo/woo_05.jpg" alt="Variation settings" width="1350" />
                                         </div>
                                     </li>
                                 </ol>
@@ -766,10 +810,10 @@
                             <div id="boughttogether">
                                 <h4>2. Products Frequently Bought Together</h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_06.jpg" alt="Bought Together section" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_06.jpg" alt="Bought Together section" width="1350" />
                                 </div>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_07.jpg" alt="Bought Together setup" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_07.jpg" alt="Bought Together setup" width="1350" />
                                 </div>
                                 <ol>
                                     <li>
@@ -782,13 +826,13 @@
                                     <li>
                                         <p>Select the product, then go to the <strong>Linked Product</strong> tab in the Product data section.</p>
                                         <div class="screenshot-item">
-                                            <img class="img-doc" src="assets/images/woo_08.jpg" alt="Bought Together tab" width="1350" />
+                                            <img class="img-doc" src="assets/images/woo/woo_08.jpg" alt="Bought Together tab" width="1350" />
                                         </div>
                                     </li>
                                     <li>
                                         <p>Search for and add products to this section.</p>
                                         <div class="screenshot-item">
-                                         <img class="img-doc" src="assets/images/woo_09.jpg" alt="Add related products" width="1350" />
+                                         <img class="img-doc" src="assets/images/woo/woo_09.jpg" alt="Add related products" width="1350" />
                                         </div>
                                     </li>
                                     <li>
@@ -798,27 +842,27 @@
                             </div>
 
                             <div id="compare">
-                                <h4>3. Product Comparison</h4>
+                            <h4>3. Product Comparison</h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_10.jpg" alt="Product comparison" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_10.jpg" alt="Product comparison" width="1350" />
                                 </div>
                                 <p>To enable this feature, install and activate the <strong>WCBoost – Compare</strong> plugin.</p>
                                 <p>After activation, a new settings section called <strong>Products Compare</strong> will appear under 
                                 <strong>WooCommerce → Settings → Products → General</strong>. Use this section to configure how the comparison feature is displayed.</p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_11.jpg" alt="Compare settings" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_11.jpg" alt="Compare settings" width="1350" />
                                 </div>
                                 <p>Click <strong>Update</strong> to save your settings.</p>
                             </div>
 
                             <div id="wishlist"><h4>4. Product Wishlist</h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_12.jpg" alt="Wishlist" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_12.jpg" alt="Wishlist" width="1350" />
                                 </div>
                                 <p>To enable this feature, install and activate the <strong>WCBoost – Wishlist</strong> plugin.</p>
                                 <p>Once activated, a new <strong>Wishlist</strong> tab will appear under <strong>WooCommerce → Settings</strong>. This tab lets you configure how the wishlist is displayed.</p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_13.jpg" alt="Wishlist settings" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_13.jpg" alt="Wishlist settings" width="1350" />
                                 </div>
                                 <p>Click <strong>Save Options</strong> when you're done.</p>
                             </div>
@@ -827,7 +871,7 @@
                                 <p>To enable this feature, install and activate the <strong>FOX - Currency Switcher Professional for WooCommerce</strong> plugin.</p>
                                 <p>To change your shop's currency settings, go to <strong>WooCommerce → Settings → General → Currency Options</strong>, then select your desired currency from the dropdown menu.</p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_14.jpg" alt="Currency switcher" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_14.jpg" alt="Currency switcher" width="1350" />
                                 </div>
                                 <p>Click <strong>Save Options</strong> after completing the setup.</p>
                             </div>
@@ -836,7 +880,7 @@
                                 <p><strong>Note:</strong> If you want to display the correct Attribute Type, you must set the Type first.</p>
 
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_15.jpg" alt="Variation setup" width="1350">
+                                    <img class="img-doc" src="assets/images/woo/woo_15.jpg" alt="Variation setup" width="1350">
                                 </div>
                                 <h5>Create Variations</h5>
                                 <ol>
@@ -846,7 +890,7 @@
                                     <li>
                                         <p><strong>Step 2:</strong> Fill in the attribute name (such as Size, Color, Image, etc.).</p>
                                         <div class="screenshot-item">
-                                            <img class="img-doc" src="assets/images/woo_16.jpg" alt="Add Attribute" width="1350">
+                                            <img class="img-doc" src="assets/images/woo/woo_16.jpg" alt="Add Attribute" width="1350">
                                         </div>
                                     </li>
                                     <li>
@@ -856,25 +900,25 @@
                                             <li>
                                                 Select Option
                                                 <div class="screenshot-item">
-                                                    <img class="img-doc" src="assets/images/woo_17.jpg" alt="Select Option" width="1350">
+                                                    <img class="img-doc" src="assets/images/woo/woo_17.jpg" alt="Select Option" width="1350">
                                                 </div>
                                             </li>
                                             <li>
                                                 Colors
                                                 <div class="screenshot-item">
-                                                    <img class="img-doc" src="assets/images/woo_18.jpg" alt="Colors" width="1350">
+                                                    <img class="img-doc" src="assets/images/woo/woo_18.jpg" alt="Colors" width="1350">
                                                 </div>
                                             </li>
                                             <li>
                                                 Label
                                                 <div class="screenshot-item">
-                                                    <img class="img-doc" src="assets/images/woo_19.jpg" alt="Label" width="1350">
+                                                    <img class="img-doc" src="assets/images/woo/woo_19.jpg" alt="Label" width="1350">
                                                 </div>
                                             </li>
                                             <li>
                                                 Images
                                                 <div class="screenshot-item">
-                                                    <img class="img-doc" src="assets/images/woo_20.jpg" alt="Images" width="1350">
+                                                    <img class="img-doc" src="assets/images/woo/woo_20.jpg" alt="Images" width="1350">
                                                 </div>
                                             </li>
                                         </ul>
@@ -882,10 +926,10 @@
                                     <li>
                                         <p><strong>Step 4:</strong> Click <strong>Add attribute</strong> when you're done. Then click on <strong>Configure terms</strong> to add new terms. The field will appear.</p>
                                         <div class="screenshot-item">
-                                            <img class="img-doc" src="assets/images/woo_21.jpg" alt="Configure terms" width="1350">
+                                            <img class="img-doc" src="assets/images/woo/woo_21.jpg" alt="Configure terms" width="1350">
                                         </div>
                                         <div class="screenshot-item">
-                                            <img class="img-doc" src="assets/images/woo_22.jpg" alt="New term field" width="1350">
+                                            <img class="img-doc" src="assets/images/woo/woo_22.jpg" alt="New term field" width="1350">
                                         </div>
                                         <p>You can now use this attribute when creating new products or apply it to existing ones.</p>
                                     </li>
@@ -902,19 +946,19 @@
                                     <li>
                                         <p><strong>Step 3:</strong> Go to the <strong>Attributes</strong> tab and add the attribute you created earlier.</p>
                                         <div class="screenshot-item">
-                                            <img class="img-doc" src="assets/images/woo_23.jpg" alt="Add attribute to product" width="1350">
+                                            <img class="img-doc" src="assets/images/woo/woo_23.jpg" alt="Add attribute to product" width="1350">
                                         </div>
                                     </li>
                                     <li>
                                         <p><strong>Step 4:</strong> Enter attribute values, click <strong>Add new</strong>, and check both <strong>Visible on the product page</strong> and <strong>Used for variations</strong>. Then click <strong>Save Attributes</strong>.</p>
                                         <div class="screenshot-item">
-                                            <img class="img-doc" src="assets/images/woo_24.jpg" alt="Attribute values" width="1350">
+                                            <img class="img-doc" src="assets/images/woo/woo_24.jpg" alt="Attribute values" width="1350">
                                         </div>
                                     </li>
                                     <li>
                                         <p><strong>Step 5:</strong> Go to the <strong>Variations</strong> tab, click <strong>Generate variations</strong> from all attributes, and confirm.</p>
                                         <div class="screenshot-item">
-                                            <img class="img-doc" src="assets/images/woo_25.jpg" alt="Generate variations" width="1350">
+                                            <img class="img-doc" src="assets/images/woo/woo_25.jpg" alt="Generate variations" width="1350">
                                         </div>
                                     </li>
                                     <li>
@@ -923,13 +967,13 @@
                                     <li>
                                         <p><strong>Step 7:</strong> Click each variation to set its image, price, sale countdown, and other relevant details.</p>
                                         <div class="screenshot-item">
-                                            <img class="img-doc" src="assets/images/woo_26.jpg" alt="Set variation details" width="1350">
+                                            <img class="img-doc" src="assets/images/woo/woo_26.jpg" alt="Set variation details" width="1350">
                                         </div>
                                     </li>
                                     <li>
                                         <p><strong>Step 8:</strong> Click <strong>Save changes</strong> and then click <strong>Update</strong> to save the product.</p>
                                         <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/woo_27.jpg" alt="Save and update" width="1350">
+                                        <img class="img-doc" src="assets/images/woo/woo_27.jpg" alt="Save and update" width="1350">
                                         </div>
                                     </li>
                                 </ol>
@@ -938,25 +982,25 @@
                             <div id="product-gallery"><h4>7. Product Gallery</h4>
                                 <h5>Product Layout</h5>
                                     <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/woo_28.jpg" alt="Product Layout" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/woo_28.jpg" alt="Product Layout" width="1350" />
                                     </div>
                                     <p>To enable this feature, go to <strong>Customize → Single Product → Product Gallery → Layout</strong> and choose your preferred image layout.</p>
 
                                 <h5>Product Image Zoom</h5>
                                     <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/woo_29.jpg" alt="Product Image Zoom" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/woo_29.jpg" alt="Product Image Zoom" width="1350" />
                                     </div>
                                     <p>Enable zoom functionality to let customers view product details such as texture, color, and materials more clearly.</p>
 
                                 <h5>Product Lightbox</h5>
                                     <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/woo_30.jpg" alt="Product Lightbox" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/woo_30.jpg" alt="Product Lightbox" width="1350" />
                                     </div>
                                     <p>This feature opens product images in a lightbox, allowing users to see them in full size without leaving the page.</p>
 
                                 <h5>Product Variation Images Gallery</h5>
                                     <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/woo_31.jpg" alt="Product Variation Images" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/woo_31.jpg" alt="Product Variation Images" width="1350" />
                                     </div>
                                     <p>Show variation-specific images that automatically update when a customer selects a new option. This creates a more interactive and visually engaging experience.</p>
 
@@ -970,13 +1014,13 @@
                                         <li>
                                             <p><strong>Step 3:</strong> Go to <strong>Products → Variations</strong> and create image attributes.</p>
                                             <div class="screenshot-item">
-                                                <img class="img-doc" src="assets/images/woo_32.jpg" alt="Create Image Attribute" width="1350" />
+                                                <img class="img-doc" src="assets/images/woo/woo_32.jpg" alt="Create Image Attribute" width="1350" />
                                             </div>
                                         </li>
                                         <li>
                                             <p><strong>Step 4:</strong> In the <strong>Product → Variations</strong> tab, upload images for each variation.</p>
                                             <div class="screenshot-item">
-                                                <img class="img-doc" src="assets/images/woo_33.jpg" alt="Upload Variation Images" width="1350" />
+                                                <img class="img-doc" src="assets/images/woo/woo_33.jpg" alt="Upload Variation Images" width="1350" />
                                             </div>
                                         </li>
                                     </ol>
@@ -985,74 +1029,74 @@
                                     <p>Add videos to showcase products in action, increase engagement, and build customer trust.</p>
                                     <p>To enable product videos, navigate to the <strong>Product Video</strong> tab, then add the video URL and a thumbnail image.</p>
                                     <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/woo_34.jpg" alt="Product Video" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/woo_34.jpg" alt="Product Video" width="1350" />
                                     </div>
                                     <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/woo_35.jpg" alt="Add Product Video" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/woo_35.jpg" alt="Add Product Video" width="1350" />
                                     </div>
 
                                 <h5>Product 3D Viewer</h5>                                    
                                     <p>Provide a 360° or 3D interactive view, allowing customers to explore your product from every angle.</p>
                                     <p>To enable this feature, go to the <strong>Product 3D Viewer</strong> tab and add the 3D model URL along with a thumbnail image.</p>
                                     <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/woo_36.jpg" alt="Product 3D Viewer" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/woo_36.jpg" alt="Product 3D Viewer" width="1350" />
                                     </div>
                                     <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/woo_37.jpg" alt="Add Product 3D Viewer" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/woo_37.jpg" alt="Add Product 3D Viewer" width="1350" />
                                     </div>
                             </div>
      
                             <div id="visitor-count"><h4> 8. Visitor Count </h4>
                                 <p>Display real-time viewer counts on product pages to create urgency and boost engagement.e.</p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_38.jpg" alt="Visitor Count" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_38.jpg" alt="Visitor Count" width="1350" />
                                 </div>
                                 <p>To enable this feature, go to <strong>Customize → Single Product → People View</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_39.jpg" alt="Visitor Count" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_39.jpg" alt="Visitor Count" width="1350" />
                                 </div>
                             </div>
                             
                             <div id="progress-sale"><h4> 9. Progress Sale </h4> 
                                 <p>Creates a sense of scarcity, encouraging purchases (urgency/FOMO).</p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_40.jpg" alt="Progress Sale" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_40.jpg" alt="Progress Sale" width="1350" />
                                 </div>
                                 <p>To enable this feature, go to <strong>Customize → Single Product → Progress Sale</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_41.jpg" alt="Progress Sale" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_41.jpg" alt="Progress Sale" width="1350" />
                                 </div> 
                                 <p>The progress bar will only appear if you’ve set a product quantity and the item has had some purchases.</p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_42.jpg" alt="Progress Sale" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_42.jpg" alt="Progress Sale" width="1350" />
                                 </div> 
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_43.jpg" alt="Progress Sale" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_43.jpg" alt="Progress Sale" width="1350" />
                                 </div> 
                             </div>
 
                             <div id="size-guide"><h4> 10. Size Guide </h4>
                                 <p>Help your customers shop with confidence. A clear size chart takes the guesswork out of buying a slim-fit dress—no try-on needed, no surprises.</p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/size-guide-01.jpg" alt="Size Guide" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/size-guide-01.jpg" alt="Size Guide" width="1350" />
                                 </div>
                                 <p>To enable this feature, go to <strong>Customize → Single Product → People View</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/size-guide-02.jpg" alt="Size Guide" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/size-guide-02.jpg" alt="Size Guide" width="1350" />
                                 </div>
                                 <div>
                                     <h5>Add New Size Guide</h5>                                    
                                     <p>Once you've enabled the size guide in your WooCommerce settings, a new menu item will appear: <strong>Products > Size Guides.</strong> On this page, simply click the “Add New” button at the top to create a new size guide for your products.</p>
                                     <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/size-guide-03.jpg" alt="Size Guide" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/size-guide-03.jpg" alt="Size Guide" width="1350" />
                                     </div>
                                     <p>The key part of a size guide is the size table. In the Tables Box, use the plus/minus buttons to add or remove rows and columns. Click any cell to enter text directly.</p>
                                     <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/size-guide-04.jpg" alt="Size Guider" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/size-guide-04.jpg" alt="Size Guider" width="1350" />
                                     </div>
                                     <p>In the product data box, a new <strong>Size Guide</strong> tab appears. Here, you can select a different size guide or adjust how it displays on the product page.</p>
                                     <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/size-guide-05.jpg" alt="Size Guide" width="1350" />
+                                        <img class="img-doc" src="assets/images/woo/size-guide-05.jpg" alt="Size Guide" width="1350" />
                                     </div>
                                 </div>
                             </div>
@@ -1060,11 +1104,11 @@
                             <div id="volume-discount"><h4> 11. Volume Discount </h4>
                                 <p>Offer quantity-based discounts or set prices per quantity. Apply discounts at the cart, assign pricing tables to products or categories, and restrict by user roles.</p>
                                 <div class="screenshot-item">
-                                        <img class="img-doc" src="assets/images/volume-discount-01.jpg" alt="Volume Discount" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/volume-discount-01.jpg" alt="Volume Discount" width="1350" />
                                 </div>
                                 <p>To enable this feature, go to <strong>Customize → Single Product → Volume Discount</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/volume-discount-02.jpg" alt="Volume Discount" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/volume-discount-02.jpg" alt="Volume Discount" width="1350" />
                                 </div>
                                 <div>
                                     <h5>Add New Volume Discount</h5>                                    
@@ -1083,617 +1127,702 @@
                             <div id="buyx-gety"><h4> 12. Buy X Get Y </h4>
                                 <p>The <strong>Buy X Get Y</strong> feature lets you run promotions that reward customers with free or discounted items—helping attract more buyers and boost conversions.</p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/buyxgety-01.jpg" alt="Buy X Get Y" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/buyxgety-01.jpg" alt="Buy X Get Y" width="1350" />
                                 </div>
                                 <p>To enable this feature, go to <strong>Customize → Single Product → Buy X Get Y</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/buyxgety-02.jpg" alt="Buy X Get Y" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/buyxgety-02.jpg" alt="Buy X Get Y" width="1350" />
                                 </div>
                                 <p>Choose the product you want to discount and specify the quantity.</p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/buyxgety-03.jpg" alt="Buy X Get Y" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/buyxgety-03.jpg" alt="Buy X Get Y" width="1350" />
                                 </div>
                             </div>
 
                             <div id="short-description"><h4> 13. Short Description </h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_44.jpg" alt="Short Description" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_44.jpg" alt="Short Description" width="1350" />
                                 </div>
                                 <p>To enable this feature, go to <strong>Customize → Single Product → Short Description</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_45.jpg" alt="Short Description" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_45.jpg" alt="Short Description" width="1350" />
                                 </div>
                             </div>
 
                             <div id="ask-question"><h4> 14. Ask A Question </h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_46.jpg" alt="Ask A Question" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_46.jpg" alt="Ask A Question" width="1350" />
                                 </div>
                                 <p>To enable this feature, go to <strong>Customize → Single Product → Ask A Question</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_47.jpg" alt="Ask A Question" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_47.jpg" alt="Ask A Question" width="1350" />
                                 </div>
                             </div>
 
                             <div id="extra-description"><h4> 15. Extra Description </h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_48.jpg" alt="Extra Description" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_48.jpg" alt="Extra Description" width="1350" />
                                 </div>
                                 <p>To enable this feature, go to <strong>Customize → Single Product → Extra Description</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_49.jpg" alt="Extra Description" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_49.jpg" alt="Extra Description" width="1350" />
                                 </div>
                             </div>
 
                             <div id="product-option"><h4> 16. Production Options </h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_50.jpg" alt="Single Production Options" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_50.jpg" alt="Single Production Options" width="1350" />
                                 </div>
                                 <p>To enable this feature, go to <strong>Customize → Single Product → Single Production Options</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_51.jpg" alt="Single Production Options" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_51.jpg" alt="Single Production Options" width="1350" />
                                 </div>
                             </div>
 
                             <div id="product-tabs"><h4> 17. Product Tab </h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_52.jpg" alt="Product Tab" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_52.jpg" alt="Product Tab" width="1350" />
                                 </div>
                                 <p>To Change Tab Style, go to <strong>Customize → Single Product → Product Tab</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_53.jpg" alt="Product Tab" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_53.jpg" alt="Product Tab" width="1350" />
                                 </div>
                             </div>
 
                             <div id="out-of-stock"><h4> 18. Out of Stock Notification </h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_54.jpg" alt="Out of Stock Notification" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_55.jpg" alt="Out of Stock Notification" width="1350" />
                                 </div>
                                 <p>To Change Tab Style, go to <strong>Customize → Single Product → Out of Stock Notification</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_55.jpg" alt="Out of Stock Notification" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_56.jpg" alt="Out of Stock Notification" width="1350" />
                                 </div>
                             </div>
 
                             <div id="related-products"><h4> 19. Related Products </h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_56.jpg" alt="Related Product" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_57.jpg" alt="Related Product" width="1350" />
                                 </div>
                                 <p>To Change Tab Style, go to <strong>Customize → Single Product → Related Product</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_57.jpg" alt="Related Product" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_58.jpg" alt="Related Product" width="1350" />
                                 </div>
                             </div>
 
                             <div id="recently-products"><h4> 20. Recently Products </h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_58.jpg" alt="Recently Product" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_54.jpg" alt="Recently Product" width="1350" />
                                 </div>
                                 <p>To Change Tab Style, go to <strong>Customize → Single Product → Recently Product</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_59.jpg" alt="Recently Product" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_59.jpg" alt="Recently Product" width="1350" />
                                 </div>
                             </div>
 
                             <div id="up-sell-products"><h4> 21. Up Sell Products </h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_60.jpg" alt="Up Sell Product" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_60.jpg" alt="Up Sell Product" width="1350" />
                                 </div>
                                 <p>To Change Tab Style, go to <strong>Customize → Single Product → Up Sell Product</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_61.jpg" alt="Up Sell Product" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_61.jpg" alt="Up Sell Product" width="1350" />
+                                </div>
+                                <p>Choose the product you want to up-sell</p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/woo/woo_62.jpg" alt="Buy X Get Y" width="1350" />
                                 </div>
                             </div>
 
                             <div id="cross-sell-products"><h4> 22. Cross-sell Products </h4>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_62.jpg" alt="Cross-sell Product" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_63.jpg" alt="Cross-sell Product" width="1350" />
                                 </div>
                                 <p>To Change Tab Style, go to <strong>Customize → Single Product → Cross-sell Product</strong></p>
                                 <div class="screenshot-item">
-                                    <img class="img-doc" src="assets/images/woo_63.jpg" alt="Cross-sell Product" width="1350" />
+                                    <img class="img-doc" src="assets/images/woo/woo_64.jpg" alt="Cross-sell Product" width="1350" />
+                                </div>
+                                <p>Choose the product you want to cross-sell</p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/woo/woo_65.jpg" alt="Buy X Get Y" width="1350" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Mobiles by Themesflat -->                    
+                    <section>
+                        <div id="mobile"><h3>Mobile</h3>
+                            <div id="mobile-topbar"><h4>1. Topbar</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/mobile/mobile_01.jpg" alt="Topbar" width="1350" />
+                                </div>
+                                <p>To enable//disable this feature, go to <strong>Customize → Mobile → Topbar</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/mobile/mobile_02.jpg" alt="Topbar" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="mobile-header"><h4>2. Header</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/mobile/mobile_03.jpg" alt="Header" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Mobile → Header</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/mobile/mobile_04.jpg" alt="Header" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="mobile-prd-card"><h4>3. Product Card</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/mobile/mobile_05.jpg" alt="Product Card" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Mobile → Product Card</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/mobile/mobile_06.jpg" alt="Product Card" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="mobile-infor"><h4>4. Mobile Info</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/mobile/mobile_07.jpg" alt="Mobile Info" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Mobile → Mobile Info</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/mobile/mobile_08.jpg" alt="Mobile Info" width="1350" />
+                                </div>
+                            </div>
+
+                            <div id="mobile-bottom"><h4>5. Navbar Mobile</h4>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/mobile/mobile_09.jpg" alt="Navbar Mobile" width="1350" />
+                                </div>
+                                <p>To enable this feature, go to <strong>Customize → Mobile → Navbar Mobile</strong></p>
+                                <div class="screenshot-item">
+                                    <img class="img-doc" src="assets/images/mobile/mobile_10.jpg" alt="Navbar Mobile" width="1350" />
                                 </div>
                             </div>
                         </div>
                     </section>
 
                     <!-- Create a page by Themesflat -->
-                    <section id="pages"><h3 id="pages">Pages</h3>
-                        <h4 id="createapage">1. Create a page</h4>
-                        <ol>
-                            <li>
-                            <p><strong>Step 1:</strong> Navigate to <strong>Pages</strong> in your admin sidebar and click the <strong>Add New</strong> option.</p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/pages_01.jpg" alt="Add New Page" width="1350px">
+                    <section id="pages">
+                    <h3 id="pages">Pages</h3>
+                        <div id="createapage">
+                            <h4>1. Create a Page</h4>
+                            <div>
+                                <p><strong>Step 1:</strong> Go to <strong>Pages</strong> in your admin sidebar and click <strong>Add New</strong>.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/pages/pages_01.jpg" alt="Add New Page" width="1350">
+                                </div>
                             </div>
-                            <p><strong>Step 2:</strong> Enter a new name for your page, then find the <strong>Page Attributes</strong> box on the right side to set your <strong>Template.</strong></p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/pages_02.jpg" alt="Page Attributes Box" width="1350px">
+                            <div>
+                                <p><strong>Step 2:</strong> Enter a page title, then in the <strong>Page Attributes</strong> box on the right, choose a <strong>Template</strong>.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/pages/pages_02.jpg" alt="Page Attributes Box" width="1350">
+                                </div>
                             </div>
-                            </li>
-                        </ol>
+                        </div>
 
-                        <h4 id="changepagetitle">2. Change page title</h4>
-                        <ol start="1">
-                            <li>
-                            <p><strong>Step 1:</strong> Go to <strong>Pages &gt; All Pages.</strong> Then hover over the page you want to edit. You will see the <strong>Quick Edit</strong> option.</p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/pages_03.jpg" alt="Quick Edit Option" width="1350px">
+                        <div id="changepagetitle">
+                            <h4>2. Change Page Title</h4>
+                            <div>
+                                <p><strong>Step 1:</strong> Go to <strong>Pages → All Pages</strong>, hover over the page you want to update, and click <strong>Quick Edit</strong>.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/pages/pages_03.jpg" alt="Quick Edit Option" width="1350">
+                                </div>
                             </div>
-                            <p><strong>Step 2:</strong> Edit the title as you want. Delete the current slug, then hit <strong>Update.</strong> It will automatically generate a new slug for your page.</p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/pages_04.jpg" alt="Edit Page Title" width="1350px">
+                            <div>
+                                <p><strong>Step 2:</strong> Update the page title and clear the current slug. Click <strong>Update</strong> to auto-generate a new slug.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/pages/pages_04.jpg" alt="Edit Page Title" width="1350">
+                                </div>
+                                <p>You can also modify parent, template, status, etc. For more options, click <strong>Edit</strong> instead of <strong>Quick Edit</strong>.</p>
                             </div>
-                            <p>You can also edit other options such as parent, template, status... If you want to edit more options, click <strong>Edit</strong> instead of <strong>Quick Edit</strong>.</p>
-                            </li>
-                        </ol>
+                        </div>
 
-                        <h4 id="pageoptions">3. Page Options</h4>
-                        <ol start="1">
-                            <li>
-                                <p>After creating a page, you can set page options that prioritize displaying this page on the front end.</p>
-                                <p>For example:</p>
-                                <p>If the default header is <strong>Header Default</strong> but you choose <strong>Header Style 01</strong> in <strong>Settings &gt; TF Header &gt; Header Style</strong>, then <strong>Header Style 03</strong> will display on your page instead of <strong>Header Style 01.</strong></p>
-                                <p><strong>Step 1:</strong> In the page editor, click <strong>Edit with Elementor</strong>.</p>
+                        <div id="pageoptions">
+                            <h4>3. Page Options</h4>
+                            <div>
+                                <p>After creating a page, you can configure display options for it on the front end.</p>
+                                <p><strong>Example:</strong></p>
+                                <p>If the default header is <strong>Header Default</strong>, but you set <strong>Header Style 01</strong> in <strong>Settings → TF Header → Header Style</strong>, and override it with <strong>Header Style 03</strong> in the page options, then <strong>Header Style 03</strong> will be used.</p>
+                            </div>
+
+                            <div>
+                                <p><strong>Step 1:</strong> Open the page in the editor and click <strong>Edit with Elementor</strong>.</p>
                                 <div class="screenshot-item">
-                                    <img src="assets/images/pages_05.jpg" alt="Edit with Elementor" width="1350px">
+                                    <img src="assets/images/pages/pages_05.jpg" alt="Edit with Elementor" width="1350">
                                 </div>
-                                <p><strong>Step 2:</strong> At the center top bar of the page, click the <strong>Settings</strong> icon:</p>
+                            </div>
+
+                            <div>
+                                <p><strong>Step 2:</strong> In the top center of the page, click the <strong>Settings</strong> icon.</p>
                                 <div class="screenshot-item">
-                                    <img src="assets/images/pages_06.jpg" alt="Settings Icon" width="1350px">
+                                    <img src="assets/images/pages/pages_06.jpg" alt="Settings Icon" width="1350">
                                 </div>
-                                <p><strong>Step 3:</strong> In Page Settings &gt; TF Header, choose the <strong>Header Style</strong> you want.</p>
+                            </div>
+
+                            <div>
+                                <p><strong>Step 3:</strong> In <strong>Page Settings → TF Header</strong>, select your desired <strong>Header Style</strong>.</p>
                                 <div class="screenshot-item">
-                                    <img src="assets/images/pages_07.jpg" alt="Select Header Style" width="1350px">
+                                    <img src="assets/images/pages/pages_07.jpg" alt="Select Header Style" width="1350">
                                 </div>
-                                <p>You can also edit options for <strong>Logo, Topbar, Header, Page Title, Sidebars,</strong> and <strong>Footer.</strong></p>
-                            </li>
-                        </ol>
+                                <p>You can also adjust settings for the <strong>Logo, Topbar, Header, Page Title, Sidebars</strong>, and <strong>Footer</strong>.</p>
+                            </div>
+                        </div>
                     </section>
+
 
                     <!-- Set up Menu by Themesflat -->
-                    <section id="menus"><h3 id="menus">Menus</h3>
-                        <h4 id="createmenu">How to create a menu</h4>
-                        <ol>
-                            <li>
-                            <p><strong>Step 1:</strong> Navigate to <strong>Appearance &gt; Menu</strong> in your admin sidebar and click the <strong>Create a new menu</strong> option.</p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/menus_01.jpg" alt="Create a new menu" width="1350px">
-                            </div>
-                            </li>
-                            <li>
-                            <p><strong>Step 2:</strong> Give your menu a name, then click <strong>Create Menu</strong>.</p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/menus_02.jpg" alt="Name and create menu" width="1350px">
-                            </div>
-                            </li>
-                            <li>
-                            <p><strong>Step 3:</strong> Choose menu items you want to add from the left and click <strong>Add to Menu.</strong> Don't forget to click <strong>Save Menu.</strong></p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/menus_03.jpg" alt="Add menu items and save" width="1350px">
-                            </div>
-                            </li>
-                        </ol>
+                    <section id="menus">
+                        <h3 id="menus">Menus</h3>
 
-                        <h4 id="megamenu">How to create a Mega Menu</h4>
-                        <ol>
-                            <li>
-                            <p><strong>Step 1:</strong> Navigate to <strong>Appearance &gt; Menu</strong> in your admin sidebar and click the <strong>Create a new menu</strong> option.</p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/menus_01.jpg" alt="Create a new menu" width="1350px">
+                        <div><h4 id="createmenu">How to Create a Menu</h4>
+                            <div>
+                                <p><strong>Step 1:</strong> Go to <strong>Appearance → Menu</strong> in the admin sidebar, then click <strong>Create a new menu</strong>.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/menu/menus_01.jpg" alt="Create a new menu" width="1350">
+                                </div>
                             </div>
-                            </li>
-                            <li>
-                            <p><strong>Step 2:</strong> Select menu items or create custom link items.</p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/menus_04.jpg" alt="Select menu items" width="1350px">
+
+                            <div>
+                                <p><strong>Step 2:</strong> Enter a name for your menu and click <strong>Create Menu</strong>.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/menu/menus_02.jpg" alt="Name and create menu" width="1350">
+                                </div>
                             </div>
-                            </li>
-                            <li>
-                            <p><strong>Step 3:</strong> Click <strong>Enable Mega Menu</strong>.</p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/menus_05.jpg" alt="Enable Mega Menu" width="1350px">
+
+                            <div>
+                                <p><strong>Step 3:</strong> Select the desired items from the left panel, click <strong>Add to Menu</strong>, then click <strong>Save Menu</strong>.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/menu/menus_03.jpg" alt="Add menu items and save" width="1350">
+                                </div>
                             </div>
-                            <p>If you haven't created a Mega Menu template yet, please navigate to <strong>Mega Menu</strong> and add a new template.</p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/menus_06.jpg" alt="Add new Mega Menu template" width="1350px">
+                        </div>
+                        <div><h4 id="megamenu">How to Create a Mega Menu</h4>
+                            <div>
+                                <p><strong>Step 1:</strong> Go to <strong>Appearance → Menu</strong> and click <strong>Create a new menu</strong>.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/menu/menus_01.jpg" alt="Create a new menu" width="1350">
+                                </div>
                             </div>
-                            <p>Here you can customize the Mega Menu as you want by choosing elements from the left sidebar, then click the <strong>Publish</strong> button.</p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/menus_07.jpg" alt="Customize Mega Menu" width="1350px">
+
+                            <div>
+                                <p><strong>Step 2:</strong> Select existing menu items or add custom links.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/menu/menus_04.jpg" alt="Select menu items" width="1350">
+                                </div>
                             </div>
-                            </li>
-                            <li>
-                            <p><strong>Step 4:</strong> After you’ve finished creating your Mega Menu, navigate to <strong>Appearance &gt; Menu</strong>. Click on <strong>Enable Mega Menu</strong>, then choose the width, position, and menu.</p>
-                            <div class="screenshot-item">
-                                <img src="assets/images/menus_08.jpg" alt="Configure Mega Menu settings" width="1350px">
+
+                            <div>
+                                <p><strong>Step 3:</strong> Click <strong>Enable Mega Menu</strong>.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/menu/menus_05.jpg" alt="Enable Mega Menu" width="1350">
+                                </div>
+
+                                <p>If you haven’t created a Mega Menu template, go to <strong>Mega Menu</strong> and add a new template.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/menu/menus_06.jpg" alt="Add new Mega Menu template" width="1350">
+                                </div>
+
+                                <p>Customize your Mega Menu using elements from the sidebar, then click <strong>Publish</strong>.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/menu/menus_07.jpg" alt="Customize Mega Menu" width="1350">
+                                </div>
                             </div>
-                            </li>
-                            <li>
-                            <p><strong>Step 5:</strong> Don't forget to click <strong>Save Changes</strong>.</p>
-                            </li>
-                        </ol>
+
+                            <div>
+                                <p><strong>Step 4:</strong> Once your Mega Menu is ready, return to <strong>Appearance → Menu</strong>. Click <strong>Enable Mega Menu</strong>, then set the width, position, and assign the Mega Menu template.</p>
+                                <div class="screenshot-item">
+                                    <img src="assets/images/menu/menus_08.jpg" alt="Configure Mega Menu settings" width="1350">
+                                </div>
+                            </div>
+
+                            <div>
+                                <p><strong>Step 5:</strong> Don’t forget to click <strong>Save Changes</strong>.</p>
+                            </div>
+                        </div>
                     </section>
+
 
                     <!-- Customize Blog Post -->
                     <section id="blog_customizer">
-                        <h3 id="theme_customize_blog">Blog Post</h3> 
-                        <p>To <strong>Customize Post</strong>  you go to: <strong>Dashboard -> Appearance -> Customize -> Content </strong></p>
-
-                        <p>
-                        <ol>
-                            <li>
-                                <h5>Blog archive</h5>
-                                <div class="screenshot-item"><img class="img-doc" alt="" src="assets/images/blog_01.jpg" width="1350px"></div>
-                                <ul>
-                                    <li><strong>Sidebar Position:</strong> Select sidebar position on the posts page (No Sidebar/Left/Right)</li>
-                                    <li><strong>Blog Layout:</strong> Select layout style for List (List/Grid)</li>
-                                    <li><strong>Post Grid Columns:</strong> Choose to display the number of columns of the article</li>
-                                    <li><strong>List Sidebar:</strong> In the dropdown box, select the sidebar you want to display on posts page</li>
-                                    <li><strong>Post Content Elements:</strong> Drag and drop elements to re-order.</li>
-                                    <li><strong>Post Excepts Length:</strong> This option is only available when you turn on "Auto Post Excepts". It uses to limit the content length which is shown on posts page</li>
-                                    <li><strong>Social Share:</strong> Enable or disable Social Share</li>
-                                    <li><strong>Read More Text:</strong> You can modify the text of Read more button here</li>
-                                    <li><strong>Meta Elements:</strong> Drag and drop elements to re-order.</li>
-                                </ul>
-                            </li>
-                            <li> 
-                                <h5>Blog Single</h5>
-                                <div class="screenshot-item"><img class="img-doc" alt="" src="assets/images/blog_02.jpg" width="1350px"></div>
-                                <ul>
-                                    <li><strong>Post Navigator:</strong> Enabled Post Navigator or not</li>
-                                    <li><strong>Related Posts:</strong> Enabled Related Posts or not</li>
-                                    <li><strong>Related Posts Style:</strong> Choose Related Posts Style (Blog List or Blog Grid)</li>
-                                    <li><strong>Columns Of Related Posts:</strong> Choose 2 Columns, 3 Columns, 4 Columns </li>
-                                    <li><strong>Number Of Related Posts:</strong> Number Of Related Posts </li>
-                                </ul>
-                            </li>                        
-                        </ol>
+                        <div id="theme_customize_blog"><h3>Blog Post</h3>                             
+                            <p>To <strong>Customize Post</strong>  you go to: <strong>Dashboard -> Appearance -> Customize -> Content </strong></p>
+                            <ol>
+                                <li>
+                                    <h4>Blog archive</h4>
+                                    <div class="screenshot-item"><img class="img-doc" alt="" src="assets/images/blog/blog_01.jpg" width="1350px"></div>
+                                    <ul>
+                                        <li><strong>Sidebar Position:</strong> Select sidebar position on the posts page (No Sidebar/Left/Right)</li>
+                                        <li><strong>Blog Layout:</strong> Select layout style for List (List/Grid)</li>
+                                        <li><strong>Post Grid Columns:</strong> Choose to display the number of columns of the article</li>
+                                        <li><strong>List Sidebar:</strong> In the dropdown box, select the sidebar you want to display on posts page</li>
+                                        <li><strong>Post Content Elements:</strong> Drag and drop elements to re-order.</li>
+                                        <li><strong>Post Excepts Length:</strong> This option is only available when you turn on "Auto Post Excepts". It uses to limit the content length which is shown on posts page</li>
+                                        <li><strong>Social Share:</strong> Enable or disable Social Share</li>
+                                        <li><strong>Read More Text:</strong> You can modify the text of Read more button here</li>
+                                        <li><strong>Meta Elements:</strong> Drag and drop elements to re-order.</li>
+                                    </ul>
+                                </li>
+                                <li> 
+                                    <h4>Blog Single</h4>
+                                    <div class="screenshot-item"><img class="img-doc" alt="" src="assets/images/blog/blog_02.jpg" width="1350px"></div>
+                                    <ul>
+                                        <li><strong>Post Navigator:</strong> Enabled Post Navigator or not</li>
+                                        <li><strong>Related Posts:</strong> Enabled Related Posts or not</li>
+                                        <li><strong>Related Posts Style:</strong> Choose Related Posts Style (Blog List or Blog Grid)</li>
+                                        <li><strong>Columns Of Related Posts:</strong> Choose 2 Columns, 3 Columns, 4 Columns </li>
+                                        <li><strong>Number Of Related Posts:</strong> Number Of Related Posts </li>
+                                    </ul>
+                                </li>                        
+                            </ol>
+                        </div>
                     </section>
 
                     <!-- Customize Widget -->
                     <section id="themesflat-addons">    
-                    <h3 id="theme_customization_themesflat-addons">Themesflat Addons</h3>
-
-                    <p>
+                    <div id="theme_customization_themesflat-addons"><h3>Themesflat Addons</h3>
+                        <p>
                         <strong>NOTE:</strong> To use all widgets of Themesflat Addons, select the page you want to edit or create a new page, then choose <strong>Edit with Elementor &gt; Elementor &gt; Themesflat Addons</strong>.
-                    </p>
+                        </p>
+                        <div class="screenshot-item">
+                            <img class="img-doc" alt="Themesflat Addons overview" src="assets/images/addons/addons_01.jpg" width="1350px" />
+                        </div>
 
-                    <div class="screenshot-item">
-                        <img class="img-doc" alt="Themesflat Addons overview" src="assets/images/addons_01.jpg" width="1350px" />
+                        <div><h4>I. Vineta Addons</h4>
+                            <ol>
+                                <li>
+                                    <h5>Vineta Product Grid</h5>
+                                    <p>You can build it using Vineta Addons.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Product Grid" src="assets/images/addons/addons_02.jpg" width="1350px" />
+                                    </div>
+                                    <p>You can customize it in the Content and Style sections.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Customize Vineta Product Grid" src="assets/images/addons/addons_03.jpg" width="1350px" />
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <h5>Vineta Product Tab Carousel</h5>
+                                    <p>You can build it using Vineta Addons.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Product Tab Carousel" src="assets/images/addons/addons_04.jpg" width="1350px" />
+                                    </div>
+                                    <p>You can customize it in the Content and Style sections.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Customize Vineta Product Tab Carousel" src="assets/images/addons/addons_05.jpg" width="1350px" />
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Product Category Grid</h5>
+                                    <p>You can build it using Vineta Addons.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Product Category Grid" src="assets/images/addons/addons_06.jpg" width="1350px" />
+                                    </div>
+                                    <p>You can customize it in the Content and Style sections.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Customize Vineta Product Category Grid" src="assets/images/addons/addons_07.jpg" width="1350px" />
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Product Category Tab Carousel</h5>
+                                    <p>You can build it using Vineta Addons.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Product Category Tab Carousel" src="assets/images/addons/addons_08.jpg" width="1350px" />
+                                    </div>
+                                    <p>You can customize it in the Content and Style sections.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Customize Vineta Product Category Tab Carousel" src="assets/images/addons/addons_09.jpg" width="1350px" />
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div><h4>II. Vineta Addons Core</h4>
+                            <ol start="5">
+                                <li>
+                                    <h5>Vineta Slider</h5>
+                                    <p>You can build it using Vineta Addons Core.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Slider" src="assets/images/addons/addons_10.jpg" width="1350px" />
+                                    </div>
+                                    <p>You can customize it in the Content and Style sections.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Customize Vineta Slider" src="assets/images/addons/addons_11.jpg" width="1350px" />
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Image Content Slider</h5>
+                                    <p>You can build it using Vineta Addons Core.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Image Content Slider" src="assets/images/addons/addons_12.jpg" width="1350px" />
+                                    </div>
+                                    <p>You can customize it in the Content and Style sections.</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Customize Vineta Image Content Slider" src="assets/images/addons/addons_13.jpg" width="1350px" />
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Image Box</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Image Box Build" src="assets/images/addons/addons_14.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Image Box Customize" src="assets/images/addons/addons_15.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Image Box Carousel</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Image Box Carousel Build" src="assets/images/addons/addons_16.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Image Box Carousel Customize" src="assets/images/addons/addons_17.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Heading</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Heading Build" src="assets/images/addons/addons_18.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Heading Customize" src="assets/images/addons/addons_19.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Button</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Button Build" src="assets/images/addons/addons_20.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Button Customize" src="assets/images/addons/addons_21.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Testimonial</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Testimonial Build" src="assets/images/addons/addons_22.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Testimonial Customize" src="assets/images/addons/addons_23.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Testimonial 2</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Testimonial 2 Build" src="assets/images/addons/addons_24.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Testimonial 2 Customize" src="assets/images/addons/addons_25.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Icon List</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Icon List Build" src="assets/images/addons/addons_26.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Icon List Customize" src="assets/images/addons/addons_27.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Marquee</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Marquee Build" src="assets/images/addons/addons_28.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Marquee Customize" src="assets/images/addons/addons_29.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Banner</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Banner Build" src="assets/images/addons/addons_30.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Banner Customize" src="assets/images/addons/addons_31.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Count Down</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Count Down Build" src="assets/images/addons/addons_32.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Count Down Customize" src="assets/images/addons/addons_33.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Blog Posts</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Blog Posts Build" src="assets/images/addons/addons_34.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Blog Posts Customize" src="assets/images/addons/addons_35.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Image Before & After</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Image Before & After Build" src="assets/images/addons/addons_36.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Image Before & After Customize" src="assets/images/addons/addons_37.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Map</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Map Build" src="assets/images/addons/addons_38.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Map Customize" src="assets/images/addons/addons_39.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Icon Carousel</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Icon Carousel Build" src="assets/images/addons/addons_40.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Icon Carousel Customize" src="assets/images/addons/addons_41.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Instagram</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Instagram Build" src="assets/images/addons/addons_42.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Instagram Customize" src="assets/images/addons/addons_43.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Product Video</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Product Video Build" src="assets/images/addons/addons_44.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Product Video Customize" src="assets/images/addons/addons_45.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Look Book</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Look Book Build" src="assets/images/addons/addons_46.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Look Book Customize" src="assets/images/addons/addons_47.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Group Images</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Group Images Build" src="assets/images/addons/addons_48.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Group Images Customize" src="assets/images/addons/addons_49.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Mega Menu</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Mega Menu Build" src="assets/images/addons/addons_50.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Mega Menu Customize" src="assets/images/addons/addons_51.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Accordion</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Accordion Build" src="assets/images/addons/addons_52.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Accordion Customize" src="assets/images/addons/addons_53.jpg" width="1350px">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h5>Vineta Nav Menu</h5>
+                                    <p>You build it at Vineta Addons Core</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Nav Menu Build" src="assets/images/addons/addons_54.jpg" width="1350px">
+                                    </div>
+                                    <p>You can customize at Content and Style</p>
+                                    <div class="screenshot-item">
+                                        <img class="img-doc" alt="Vineta Nav Menu Customize" src="assets/images/addons/addons_55.jpg" width="1350px">
+                                    </div>
+                                </li>
+                                <p>There are many more widgets for you to choose, Everything is so simple when you just need drag and drop. Wish you have a great website!</p>
+                            </ol>
+                        </div>
                     </div>
-
-                        <h4>I. Vineta Addons</h4>
-                        <ol>
-                            <li>
-                                <h5>Vineta Product Grid</h5>
-                                <p>You can build it using Vineta Addons.</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Product Grid" src="assets/images/addons_02.jpg" width="1350px" />
-                                </div>
-                                <p>You can customize it in the Content and Style sections.</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Customize Vineta Product Grid" src="assets/images/addons_03.jpg" width="1350px" />
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <h5>Vineta Product Tab Carousel</h5>
-                                <p>You can build it using Vineta Addons.</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Product Tab Carousel" src="assets/images/addons_04.jpg" width="1350px" />
-                                </div>
-                                <p>You can customize it in the Content and Style sections.</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Customize Vineta Product Tab Carousel" src="assets/images/addons_05.jpg" width="1350px" />
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Product Category Grid</h5>
-                                <p>You can build it using Vineta Addons.</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Product Category Grid" src="assets/images/addons_06.jpg" width="1350px" />
-                                </div>
-                                <p>You can customize it in the Content and Style sections.</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Customize Vineta Product Category Grid" src="assets/images/addons_07.jpg" width="1350px" />
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Product Category Tab Carousel</h5>
-                                <p>You can build it using Vineta Addons.</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Product Category Tab Carousel" src="assets/images/addons_08.jpg" width="1350px" />
-                                </div>
-                                <p>You can customize it in the Content and Style sections.</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Customize Vineta Product Category Tab Carousel" src="assets/images/addons_09.jpg" width="1350px" />
-                                </div>
-                            </li>
-                        </ol>
-
-                        <h4>II. Vineta Addons Core</h4>
-                        <ol start="5">
-                            <li>
-                                <h5>Vineta Slider</h5>
-                                <p>You can build it using Vineta Addons Core.</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Slider" src="assets/images/addons_10.jpg" width="1350px" />
-                                </div>
-                                <p>You can customize it in the Content and Style sections.</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Customize Vineta Slider" src="assets/images/addons_11.jpg" width="1350px" />
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Image Content Slider</h5>
-                                <p>You can build it using Vineta Addons Core.</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Image Content Slider" src="assets/images/addons_12.jpg" width="1350px" />
-                                </div>
-                                <p>You can customize it in the Content and Style sections.</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Customize Vineta Image Content Slider" src="assets/images/addons_13.jpg" width="1350px" />
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Image Box</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Image Box Build" src="assets/images/addons_14.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Image Box Customize" src="assets/images/addons_15.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Image Box Carousel</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Image Box Carousel Build" src="assets/images/addons_16.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Image Box Carousel Customize" src="assets/images/addons_17.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Heading</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Heading Build" src="assets/images/addons_18.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Heading Customize" src="assets/images/addons_19.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Button</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Button Build" src="assets/images/addons_20.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Button Customize" src="assets/images/addons_21.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Testimonial</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Testimonial Build" src="assets/images/addons_22.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Testimonial Customize" src="assets/images/addons_23.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Testimonial 2</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Testimonial 2 Build" src="assets/images/addons_24.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Testimonial 2 Customize" src="assets/images/addons_25.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Icon List</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Icon List Build" src="assets/images/addons_26.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Icon List Customize" src="assets/images/addons_27.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Marquee</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Marquee Build" src="assets/images/addons_28.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Marquee Customize" src="assets/images/addons_29.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Banner</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Banner Build" src="assets/images/addons_30.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Banner Customize" src="assets/images/addons_31.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Count Down</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Count Down Build" src="assets/images/addons_32.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Count Down Customize" src="assets/images/addons_33.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Blog Posts</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Blog Posts Build" src="assets/images/addons_34.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Blog Posts Customize" src="assets/images/addons_35.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Image Before & After</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Image Before & After Build" src="assets/images/addons_36.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Image Before & After Customize" src="assets/images/addons_37.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Map</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Map Build" src="assets/images/addons_38.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Map Customize" src="assets/images/addons_39.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Icon Carousel</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Icon Carousel Build" src="assets/images/addons_40.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Icon Carousel Customize" src="assets/images/addons_41.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Instagram</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Instagram Build" src="assets/images/addons_42.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Instagram Customize" src="assets/images/addons_43.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Product Video</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Product Video Build" src="assets/images/addons_44.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Product Video Customize" src="assets/images/addons_45.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Look Book</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Look Book Build" src="assets/images/addons_46.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Look Book Customize" src="assets/images/addons_47.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Group Images</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Group Images Build" src="assets/images/addons_48.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Group Images Customize" src="assets/images/addons_49.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Mega Menu</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Mega Menu Build" src="assets/images/addons_50.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Mega Menu Customize" src="assets/images/addons_51.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Accordion</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Accordion Build" src="assets/images/addons_52.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Accordion Customize" src="assets/images/addons_53.jpg" width="1350px">
-                                </div>
-                            </li>
-
-                            <li>
-                                <h5>Vineta Nav Menu</h5>
-                                <p>You build it at Vineta Addons Core</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Nav Menu Build" src="assets/images/addons_54.jpg" width="1350px">
-                                </div>
-                                <p>You can customize at Content and Style</p>
-                                <div class="screenshot-item">
-                                    <img class="img-doc" alt="Vineta Nav Menu Customize" src="assets/images/addons_55.jpg" width="1350px">
-                                </div>
-                            </li>
-                                   
-                            <p>There are many more widgets for you to choose, Everything is so simple when you just need drag and drop. Wish you have a great website!</p>
-                        </ol>
                     </section>
                 
                     <div class="footer-area">

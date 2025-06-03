@@ -81,14 +81,15 @@ strong{
 
 #documenter_content{
 	position:absolute;
-	right:8px;
-	left:250px;
+	/* right:8px; */
+	left:280px;
 	padding:0 80px;
 	padding-bottom:50px;
 	min-height:100%;
 	height:auto;
 	z-index:1;
 	background:#fff;
+	
 }
 #documenter_sidebar{
 	-moz-box-shadow:0 0 6px rgba(3,3,3,0.6);
@@ -147,6 +148,22 @@ noscript p{
 	letter-spacing:0;
 }
 
+/* WebKit Browsers */
+#documenter_sidebar::-webkit-scrollbar,
+.content-area::-webkit-scrollbar {
+  width: 4px;
+}
+
+#documenter_sidebar::-webkit-scrollbar-thumb,
+.content-area::-webkit-scrollbar-thumb {
+  background: #77E590;
+  border-radius: 4px;
+}
+
+#documenter_sidebar::-webkit-scrollbar-track,
+.content-area::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
 
 /*----------------------------------------------------------------------*/
 /* Sidebar
@@ -156,6 +173,10 @@ noscript p{
     font-size: 20px;
     font-weight: 600;
     display: block;
+	height: 100vh;
+  	overflow-y: auto;
+  	overflow-x: hidden;
+  	scroll-behavior: smooth;
 }
 
 /* Logo */
@@ -168,6 +189,11 @@ noscript p{
     color: #fff;
 }
 
+#documenter_nav .has-submenu {
+    position: relative;
+    /* padding-right: 20px; */
+}
+
 /* Wrapper cho từng mục menu */
 #documenter_nav > div {
     margin-bottom: 5px;
@@ -178,7 +204,7 @@ noscript p{
 #documenter_nav a {
     display: block;
     padding: 13px 16px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     color: #fff;
     border-bottom: 1px solid #444;
@@ -186,21 +212,36 @@ noscript p{
     transition: background 0.2s;
 }
 
-/* Hover cho menu chính */
-#documenter_nav a:hover {
-    background-color: #444;
+#documenter_nav .submenu a {
+	font-size: 16px;
 }
+#documenter_nav .submenu {
+  transition: all 0.3s ease;
+}
+/* Hover cho menu chính */
+#documenter_nav a:hover, #documenter_nav a.active {
+    background-color: transparent;
+	color: #77E590;
+}
+#documenter_nav a.has-submenu.active.open-submenu {
+    background: transparent;
+    color: #77E590;
+	
+}
+
 
 /* Active trạng thái của menu & submenu */
 #documenter_nav a.current {
     color: #77E590;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* Submenu container */
 .submenu {
     display: none;
     padding-left: 15px;
+	transition: all 0.3s ease;
+	position: relative;
 }
 
 /* Khi submenu được mở */
@@ -224,8 +265,15 @@ noscript p{
 .submenu a.current {
     color: #77E590;
     font-weight: 700;
+	font-size: 14px;
+}
+.menu-item {
+  position: relative;
 }
 
+.menu-item:hover .submenu {
+  display: block;
+}
 /*----------------------------------------------------------------------*/
 /* Content
 /*----------------------------------------------------------------------*/
@@ -312,6 +360,7 @@ header .wrap-btn {
 	padding-bottom: 15px;
     margin-bottom: 30px;
     border-bottom: 1px solid #dcdcdc;
+
 }
 #documenter_content h1{
 	font-size:32px;
